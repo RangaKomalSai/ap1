@@ -1,21 +1,25 @@
 // components/Testimonials.js
 import React from "react";
+import SectionHeading from "../../components/SectionHeading.js";
 
 function Testimonials() {
   return (
-    <section className="testimonials bg-indigo-900 text-white py-16">
-      <div className="container mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-12">Testimonials</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Add testimonial items here */}
-          {/* Example:
-          <div className="testimonial-item bg-indigo-800 p-6 rounded-lg">
-            <img src="path-to-image" alt="Testimonial" className="w-24 h-24 rounded-full mx-auto mb-4" />
-            <p className="mb-4">Testimonial text</p>
-            <h4 className="font-semibold">Name</h4>
-            <p>Position</p>
+    <section className="testimonials bg-primary text-white py-16 font-montserrat w-full overflow-hidden">
+      <div className="container mx-auto text-center">
+        <div className="relative bg-white text-black py-16 content2 font-montserrat">
+          <div className="container mx-auto flex flex-col justify-center items-center my-8">
+            <SectionHeading
+              back_heading="REVIEWS"
+              main_heading="Testimonials"
+              light={true}
+            />
+            <div className="flex pb-8 space-x-16">
+              <div className="h-[400px] w-[350px] bg-black"></div>
+              <div className="h-[400px] w-[350px] bg-black"></div>
+              <div className="h-[400px] w-[350px] bg-black"></div>
+              <div className="h-[400px] w-[350px] bg-black"></div>
+            </div>
           </div>
-          */}
         </div>
       </div>
     </section>

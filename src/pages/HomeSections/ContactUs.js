@@ -1,46 +1,42 @@
 // components/ContactUs.js
 import React from "react";
+import SectionHeading from "../../components/SectionHeading";
+import { Link } from "react-router-dom";
 
 function ContactUs() {
   return (
-    <section className="contact-us bg-indigo-800 text-white py-16">
-      <div className="container mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-12">Contact Us</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-          <div className="contact-item text-center">
-            <img
-              src="path-to-image"
-              alt="Ramya Ranjan Behera"
-              className="w-32 h-32 rounded-full mx-auto mb-4"
-            />
+    <section className="contact-us bg-primary text-white py-16 px-16 font-montserrat">
+      <div className="container mx-auto text-center">
+        <SectionHeading back_heading="CONTACT" main_heading="Contact Us" />
+        <div className="flex space-x-28 justify-center items-center">
+          <div>
+            <div className="box-container mb-12">
+              <div className="white-box rounded-2xl"></div>
+              <div className="black-box rounded-2xl"></div>
+            </div>
             <h3 className="text-xl font-semibold">Ramya Ranjan Behera</h3>
             <p>Competition Head</p>
-            <p>ramya.abvyuday@gmail.com</p>
+            <Link to="mailto:ramya.abhyuday@gmail.com">
+              <p>ramya.abhyuday@gmail.com</p>
+            </Link>
+            <Link to="tel:+918144020711">
+              <p>81440 20711</p>
+            </Link>
           </div>
-          <div className="contact-item text-center">
-            <img
-              src="path-to-image"
-              alt="Hardik Agrawal"
-              className="w-32 h-32 rounded-full mx-auto mb-4"
-            />
+          <div>
+            <div className="box-container mb-12">
+              <div className="white-box rounded-2xl"></div>
+              <div className="black-box rounded-2xl"></div>
+            </div>
             <h3 className="text-xl font-semibold">Hardik Agrawal</h3>
             <p>Competition Head</p>
-            <p>hardik.abvyuday@gmail.com</p>
+            <Link to="mailto:hardik.abhyuday@gmail.com">
+              <p>hardik.abhyuday@gmail.com</p>
+            </Link>
+            <Link to="tel:+918209205908">
+              <p>82092 05908</p>
+            </Link>
           </div>
-        </div>
-        <div className="social-links flex justify-center space-x-4 mb-8"> 
-          {/* Add social media icons/links here */}
-          {/* Example:
-          <a href="#" className="text-white hover:text-blue-300">
-            <i className="fab fa-facebook-f"></i>
-          </a>
-          */}
-        </div>
-        <div className="reach-out text-center">
-          <h3 className="text-xl font-semibold mb-2">REACH OUT</h3>
-          <p>ABVyuday Office</p>
-          <p>Student Activity Centre,</p>
-          <p>IIT Bombay, Powai</p>
         </div>
       </div>
     </section>

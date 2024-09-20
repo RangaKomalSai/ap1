@@ -3,13 +3,13 @@ import React from "react";
 import ap from "../../assets/ap.svg";
 import apsub from "../../assets/apsub.svg";
 import "./sections.css";
-import SectionHeading from "../../components/SectionHeading";
+import SectionHeading from "../../components/SectionHeading.js";
 
 function ActionPlanInfo() {
   return (
     <section className="action-plan-info bg-primary text-white py-16 font-montserrat">
       <div className="container mx-auto text-center">
-        <div className="flex flex-col justify-start items-end w-[60%] h-[80vh]">
+        <div className="flex flex-col justify-start items-end w-[60%] h-[70vh]">
           <img src={ap} alt="Logo" className="h-64 w-auto" draggable="false" />{" "}
           <img
             src={apsub}
@@ -26,7 +26,11 @@ function ActionPlanInfo() {
 
         <div className="relative bg-white text-black py-16 content font-montserrat">
           <div className="container mx-auto flex flex-col justify-center items-center my-8">
-            <SectionHeading back_heading="ACTION PLAN" main_heading="What is Action Plan?" light={true}/>
+            <SectionHeading
+              back_heading="ACTION PLAN"
+              main_heading="What is Action Plan?"
+              light={true}
+            />
             <p className="mb-8 max-w-3xl mx-auto text-[#311B92] font-semibold">
               Action Plan, the Flagship Social Entrepreneurship Competition of
               Abhyuday, IIT Bombay, empowers young minds to tackle grass root
@@ -38,7 +42,9 @@ function ActionPlanInfo() {
             </p>
             <div className="stats flex justify-center space-x-12 mb-8">
               <div className="stat">
-                <div className="text-4xl font-bold text-heading mb-2">2000+</div>
+                <div className="text-4xl font-bold text-heading mb-2">
+                  2000+
+                </div>
                 <div className="text-[#5ED2FF] font-extrabold text-[20px]">
                   ENTRIES
                 </div>

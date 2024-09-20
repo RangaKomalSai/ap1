@@ -4,6 +4,7 @@ import ActionPlanInfo from "./HomeSections/ActionPlanInfo";
 import Benefits from "./HomeSections/Benefits";
 import Testimonials from "./HomeSections/Testimonials";
 import ContactUs from "./HomeSections/ContactUs";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       <Benefits />
       <Testimonials />
       <ContactUs />
+      <Footer/>
     </div>
   );
 }
