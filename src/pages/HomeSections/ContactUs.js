@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function ContactUs() {
   return (
-    <section className="contact-us bg-primary text-white py-16 px-16 font-montserrat">
+    <section className="contact-us bg-primary text-white py-16 px-16 font-montserrat" id="contact">
       <div className="container mx-auto text-center">
         <SectionHeading back_heading="CONTACT" main_heading="Contact Us" />
         <div className="flex space-x-28 justify-center items-center">
@@ -14,13 +14,19 @@ function ContactUs() {
               <div className="white-box rounded-2xl"></div>
               <div className="black-box rounded-2xl"></div>
             </div>
-            <h3 className="text-xl font-semibold">Ramya Ranjan Behera</h3>
-            <p>Competition Head</p>
+            <h3 className="text-xl font-semibold" data-aos="zoom-in-up">
+              Ramya Ranjan Behera
+            </h3>
+            <p data-aos="zoom-in-up">Competition Head</p>
             <Link to="mailto:ramya.abhyuday@gmail.com">
-              <p>ramya.abhyuday@gmail.com</p>
+              <p data-aos="zoom-in-up" className="hover:underline">
+                ramya.abhyuday@gmail.com
+              </p>
             </Link>
             <Link to="tel:+918144020711">
-              <p>81440 20711</p>
+              <p data-aos="zoom-in-up" className="hover:underline">
+                81440 20711
+              </p>
             </Link>
           </div>
           <div>
@@ -28,13 +34,19 @@ function ContactUs() {
               <div className="white-box rounded-2xl"></div>
               <div className="black-box rounded-2xl"></div>
             </div>
-            <h3 className="text-xl font-semibold">Hardik Agrawal</h3>
-            <p>Competition Head</p>
+            <h3 className="text-xl font-semibold" data-aos="zoom-in-up">
+              Hardik Agrawal
+            </h3>
+            <p data-aos="zoom-in-up">Competition Head</p>
             <Link to="mailto:hardik.abhyuday@gmail.com">
-              <p>hardik.abhyuday@gmail.com</p>
+              <p data-aos="zoom-in-up" className="hover:underline">
+                hardik.abhyuday@gmail.com
+              </p>
             </Link>
             <Link to="tel:+918209205908">
-              <p>82092 05908</p>
+              <p data-aos="zoom-in-up" className="hover:underline">
+                82092 05908
+              </p>
             </Link>
           </div>
         </div>

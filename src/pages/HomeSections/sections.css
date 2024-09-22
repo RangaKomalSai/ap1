@@ -33,28 +33,28 @@
 
   #instagram > svg:hover{
     fill: url(#gradient-fill);
-    transform: scale(1.05);
+    transform: scale(1.10);
   }
   #youtube > svg:hover{
     fill: red;
-    transform: scale(1.05);
+    transform: scale(1.10);
   }
   #linkedin > svg:hover{
     fill: #0077B5;
-    transform: scale(1.05);
+    transform: scale(1.10);
   }
   #facebook > svg:hover{
     fill: #1877F2;
-    transform: scale(1.05);
+    transform: scale(1.10);
   }
   #x > svg:hover{
     fill: black;
-    transform: scale(1.05);
+    transform: scale(1.10);
   }
 
   /* #youtube  > svg:hover {
     fill: red;
-    transform: scale(1.05);
+    transform: scale(1.10);
     animation: fill-color-animation 1s ease-in-out;
 
   }

@@ -1,0 +1,52 @@
+.incen-number{
+    background: linear-gradient(to right, #651FFF,#00BCD4); 
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text;
+}
+
+.incen-cont {
+    transition: transform 0.5s ease-in-out;
+    cursor: default;
+}
+
+.incen-cont:hover {
+    transform: scale(1.2);
+}
+
+@keyframes drawPath {
+  0% {
+    stroke-dashoffset: 2520;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+.animated-path {
+  stroke-dasharray: 2520;
+  stroke-dashoffset: 2520;
+  animation: drawPath 5s linear;
+}
+
+
+/* .glow-light {
+    position: absolute;
+    top: calc(50% + 2px);
+    left: 0;
+    width: 80px;
+    height: 2px;
+    border-radius: 10%;
+    background-color: white;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.8); 
+    
+    animation: moveLight 4s linear;
+  }
+  
+  @keyframes moveLight {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: 94%;
+    }
+  } */

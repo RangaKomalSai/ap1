@@ -1,6 +1,7 @@
 import React from "react";
 import { ReactComponent as Insta } from "../assets/insta.svg";
 import { ReactComponent as Linkedin } from "../assets/linkedin.svg";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -118,10 +119,12 @@ function Footer() {
           <div className="h-[200px] w-1 bg-white mx-4"></div>
           <div className="text-xl font-semibold text-center">
             <h2 className="font-bold mb-4">REACH OUT</h2>
+            <Link to="https://maps.app.goo.gl/seG6qxwWHYLZWjrG7" className="hover:underline">
             <p>Abhyuday Office,</p>
             <p>Student Activity Centre,</p>
             <p>IIT Bombay, Powai,</p>
             <p>Mumbai, India</p>
+            </Link>
           </div>
         </div>
       </div>
