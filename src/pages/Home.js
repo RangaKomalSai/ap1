@@ -1,10 +1,15 @@
 // pages/Home.js
 import React,{useEffect} from "react";
 import ActionPlanInfo from "./HomeSections/ActionPlanInfo";
-import Benefits from "./HomeSections/Benefits";
+
 import Testimonials from "./HomeSections/Testimonials";
 import ContactUs from "./HomeSections/ContactUs";
 import Footer from "../components/Footer";
+import Component from "./HomeSections/sticky";
+import ActionPlanSection from "./HomeSections/Ap";
+
+
+
 import { useLocation } from "react-router-dom";
 
 function Home() {
@@ -22,8 +27,11 @@ function Home() {
   }, [location]);
   return (
     <div className="home">
+       <ActionPlanSection/>
       <ActionPlanInfo />
-      <Benefits />
+
+
+ <Component/>
       <Testimonials />
       <ContactUs />
       <Footer/>

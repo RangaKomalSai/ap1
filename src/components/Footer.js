@@ -5,12 +5,12 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <section className="contact-us bg-primary text-white py-16 px-16 font-montserrat">
+    <section className="contact-us bg-primary text-white py-8 px-4 font-montserrat md:py-16 md:px-16">
       <div className="container mx-auto">
-        <div className="flex justify-around items-center">
-          <div>
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
+          <div className="mb-8 md:mb-0">
             <h2 className="font-extrabold text-2xl mb-4">FOLLOW US:</h2>
-            <ul className="pb-4 text-white mx-auto flex flex-row justify-between items-center gap-4 lg:gap-8 text-xl">
+            <ul className="pb-4 text-white flex flex-row flex-wrap justify-center items-center gap-4 lg:gap-8 text-xl">
               <li
                 className="scroll-icon animated"
                 data-animate="fadeInRight"
@@ -116,14 +116,14 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="h-[200px] w-1 bg-white mx-4"></div>
+          <div className="h-[1px] w-full md:w-1 bg-white mx-4 mb-8 md:mb-0"></div>
           <div className="text-xl font-semibold text-center">
             <h2 className="font-bold mb-4">REACH OUT</h2>
             <Link to="https://maps.app.goo.gl/seG6qxwWHYLZWjrG7" className="hover:underline">
-            <p>Abhyuday Office,</p>
-            <p>Student Activity Centre,</p>
-            <p>IIT Bombay, Powai,</p>
-            <p>Mumbai, India</p>
+              <p>Abhyuday Office,</p>
+              <p>Student Activity Centre,</p>
+              <p>IIT Bombay, Powai,</p>
+              <p>Mumbai, India</p>
             </Link>
           </div>
         </div>
