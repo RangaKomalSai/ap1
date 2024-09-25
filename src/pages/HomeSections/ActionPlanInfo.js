@@ -69,7 +69,7 @@ function ActionPlanInfo() {
         });
       },
       {
-        threshold: 0.5, // Trigger when 50% of the stats container is visible
+        threshold: 0.6, // Trigger when 50% of the stats container is visible
       }
     );
 
@@ -88,20 +88,20 @@ function ActionPlanInfo() {
     <section className="action-plan-info bg-primary text-white py-16 font-montserrat">
       <div className="container mx-auto text-center">
         <div
-          className="flex flex-col justify-start items-end w-[60%] h-[70vh]"
+          className="flex flex-col justify-start items-center md:items-end w-full md:w-[60%] min-h-[40vh] md:h-[70vh]"
           id="top"
         >
           <img
             src={ap}
             alt="Logo"
-            className="h-80 w-auto"
+            className="md:h-80 md:w-auto w-[90%] h-auto"
             draggable="false"
             data-aos="fade-right"
           />
-          <div className="flex justify-end items-center w-full my-4 mr-32">
+          <div className="flex justify-center md:justify-end items-center w-full my-4 md:mr-32">
             <Link to="/register">
               <button
-                className="bg-[#41BDEE] hover:bg-blue-600 text-[20px] text-white font-extrabold py-2 px-4 rounded-full text-lg"
+                className="bg-[#41BDEE] hover:bg-blue-600 text-[20px] text-white font-extrabold py-2 px-4 mt-10 md:mt-0 rounded-full text-lg"
                 data-aos="zoom-in-up"
               >
                 REGISTER NOW
@@ -111,14 +111,14 @@ function ActionPlanInfo() {
         </div>
 
         <div className="relative bg-white text-black py-16 content font-montserrat">
-          <div className="container mx-auto flex flex-col justify-center items-center my-8">
+          <div className="container mx-auto flex flex-col justify-center items-center mt-8 md:my-8">
             <SectionHeading
               back_heading="ACTION PLAN"
               main_heading="What is Action Plan?"
               light={true}
             />
             <p
-              className="mb-8 max-w-3xl mx-auto text-[#311B92] font-semibold"
+              className="mb-8 text-sm mx-6 md:max-w-3xl md:mx-auto text-[#311B92] font-semibold"
               data-aos="fade-up"
             >
               Action Plan, the Flagship Social Entrepreneurship Competition of
@@ -130,11 +130,11 @@ function ActionPlanInfo() {
               premier Social Entrepreneurship Platform.
             </p>
             <div
-              className="stats flex justify-center space-x-12 mb-8"
+              className="stats grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12 mb-8 mx-6 md:mx-auto"
               ref={statsRef}
             >
               <div className="stat">
-                <div className="text-4xl font-bold text-heading mb-2">
+                <div className="text-2xl md:text-4xl font-bold text-heading md:mb-2">
                   {Math.floor(entries)}+
                 </div>
                 <div className="text-[#5ED2FF] font-extrabold text-[20px]">
@@ -142,7 +142,7 @@ function ActionPlanInfo() {
                 </div>
               </div>
               <div className="stat">
-                <div className="text-4xl font-bold text-heading mb-2">
+                <div className="text-2xl md:text-4xl font-bold text-heading md:mb-2">
                   INR {prizes.toFixed(1)} Mn+
                 </div>
                 <div className="text-[#5ED2FF] font-extrabold text-[20px]">
@@ -150,7 +150,7 @@ function ActionPlanInfo() {
                 </div>
               </div>
               <div className="stat">
-                <div className="text-4xl font-bold text-heading mb-2">
+                <div className="text-2xl md:text-4xl font-bold text-heading md:mb-2">
                   {Math.floor(mentors)}+
                 </div>
                 <div className="text-[#5ED2FF] font-extrabold text-[20px]">

@@ -11,9 +11,9 @@ function Home() {
     <div className="home">
       <ActionPlanInfo />
       <Benefits />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <ContactUs />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

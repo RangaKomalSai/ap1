@@ -21,7 +21,7 @@ const MobileHeader = ({ closeNav, showNav }: Props) => {
       ></div>
 
       <ul
-        className={`text-white ${navOpenStyle} top-0 fixed flex items-center justify-center flex-col h-screen transform transition-all duration-300 delay-300 font-montserrat w-4/5 md:w-[60%] bg-primary space-y-14 z-[1009] md:text-2xl`}
+        className={`text-white ${navOpenStyle} top-0 fixed flex items-center justify-center flex-col h-screen transform transition-all duration-300 delay-300 font-montserrat w-4/5 md:w-[60%] bg-primary space-y-14 z-[1009] text-md md:text-2xl`}
       >
         <li>
           <Link to="/" onClick={handleClick}>

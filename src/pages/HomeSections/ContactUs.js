@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 
 function ContactUs() {
   return (
-    <section className="contact-us bg-primary text-white py-16 px-16 font-montserrat" id="contact">
+    <section className="contact-us bg-primary text-white py-16 px-8 md:px-16 font-montserrat" id="contact">
       <div className="container mx-auto text-center">
         <SectionHeading back_heading="CONTACT" main_heading="Contact Us" />
-        <div className="flex space-x-28 justify-center items-center">
+        <div className="flex flex-wrap gap-5 md:gap-28 justify-center items-center">
           <div>
             <div className="box-container mb-12">
               <div className="white-box rounded-2xl"></div>
