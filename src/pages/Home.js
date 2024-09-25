@@ -1,5 +1,5 @@
 // pages/Home.js
-import React, { useEffect } from "react";
+import React from "react";
 import ActionPlanInfo from "./HomeSections/ActionPlanInfo.js";
 import Benefits from "./HomeSections/Benefits.js";
 import Testimonials from "./HomeSections/Testimonials.js";

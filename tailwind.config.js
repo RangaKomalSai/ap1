@@ -8,8 +8,8 @@ module.exports = {
       },
       colors: {
         primary: "#180D49",
-        heading: "#0C2898"
-      }
+        heading: "#0C2898",
+      },
     },
   },
   plugins: [],

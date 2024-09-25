@@ -3,12 +3,12 @@ import React, { useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Header from "./components/Header.js";
 import Home from "./pages/Home.js";
 import Register from "./pages/Register.js";
 import Competition from "./pages/Competition.js";
 import Faqs from "./pages/Faqs.js";
 import ContactUs from "./pages/ContactUs.js";
+import ResHeader from "./components/ResHeader.js";
 // import Footer from "./components/Footer";
 
 function App() {
@@ -29,7 +29,8 @@ function App() {
   return (
     <Router>
       <div className="App bg-primary text-white min-h-screen">
-        <Header /> {/* This remains static */}
+        {/* <Header /> This remains static */}
+        <ResHeader/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/register" element={<Register />} />
