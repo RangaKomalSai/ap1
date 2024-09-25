@@ -13,7 +13,7 @@
 .incen-cont:hover {
     transform: scale(1.2);
 }
-
+/* 
 @keyframes drawPath {
   0% {
     stroke-dashoffset: 2520;
@@ -26,7 +26,7 @@
   stroke-dasharray: 2520;
   stroke-dashoffset: 2520;
   animation: drawPath 5s linear;
-}
+} */
 
 
 /* .glow-light {
@@ -50,3 +50,23 @@
       left: 94%;
     }
   } */
+
+
+  @keyframes glowAnimation {
+    0% {
+      stroke-dashoffset: 100%;
+      opacity: 0;
+    }
+    100% {
+      stroke-dashoffset: 0;
+      opacity: 1;
+    }
+  }
+  .glow-line {
+    stroke-dasharray: 100%;
+    stroke-dashoffset: 50%;
+    opacity: 0;
+  }
+  .glow-line.active {
+    animation: glowAnimation 3.5s linear forwards;
+  }

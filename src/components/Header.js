@@ -4,13 +4,12 @@ import { Link, useNavigate } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import logo from "../assets/ab_logo.svg";
 
-
 function Header() {
   const navigate = useNavigate();
 
   const handleLinkClick = (event, path) => {
     event.preventDefault();
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
     navigate(path);
   };
 
@@ -26,7 +25,7 @@ function Header() {
               to="/"
               className="hover:text-blue-300 cursor-pointer"
               onClick={() => {
-                window.scrollTo({ top: 0, behavior: "smooth" }); 
+                window.scrollTo({ top: 0, behavior: "smooth" });
               }}
             >
               Home
@@ -57,20 +56,15 @@ function Header() {
           </li>
           <li>
             <Link
-              to="/#contact"
+              to="/contactus"
               className="hover:text-blue-300"
-              onClick={() => {
-                window.scrollTo({
-                  top: document.body.scrollHeight,
-                  behavior: "smooth",
-                });
-              }}
+              onClick={(event) => handleLinkClick(event, "/contactus")}
             >
               Contact Us
             </Link>
           </li>
           <li>
-            <Link to="/faq" className="hover:text-blue-300">
+            <Link to="/faqs" className="hover:text-blue-300">
               FAQs
             </Link>
           </li>

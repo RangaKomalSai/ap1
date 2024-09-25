@@ -1,406 +1,476 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import SectionHeading from "../components/SectionHeading";
 import Footer from "../components/Footer";
 import "./IncentivesSections/sections.css";
-import Path from "../components/Path";
 
 function Incentives() {
+  const [activeLineIndex, setActiveLineIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActiveLineIndex((prevIndex) => (prevIndex + 1) % 4);
+    }, 3500); // Change line every 2 seconds
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <section className="action-plan-info bg-primary text-white py-16 font-montserrat">
       <div className="container mx-auto">
         <div className="mb-32">
           <SectionHeading back_heading="TIMELINE" main_heading="Timeline" />
-          {/* <div className="grid grid-cols-4 gap-4 w-[80%] mx-auto">
-            <div className="flex flex-col items-start">
-              <div className="bg-white rounded-md font-bold text-[64px] p-2 h-[110px] w-[110px] text-center incen-cont">
-                <p className="incen-number">01</p>
-              </div>
-              <p className="text-white mt-2 text-start font-extrabold text-sm ">
-                <p className="border-b-2 mb-2 pb-2">
-                  Registrations start
-                  <br />
-                  Questionnaire Submission
-                  <br />
+          <div>
+            <div className="w-[80%] mx-auto flex justify-between items-end">
+              <div className="w-[20%]"></div>
+              <div className="w-[20%]">
+                <p className="text-white mt-2 text-start font-extrabold text-sm ">
+                  <p className="border-b-2 mb-2 pb-2 w-[50%]">
+                    Workshops
+                    <br />
+                  </p>
+                  30 Sept - 21 Oct
                 </p>
-                28 Sept
-              </p>
-            </div>
-            <div className="flex flex-col items-center">
-              <p className="text-white mt-2 text-start font-extrabold text-sm ">
-                <p className="border-b-2 mb-2 pb-2">
-                  Registrations start
-                  <br />
-                  Questionnaire Submission
-                  <br />
+              </div>
+              <div className="w-[20%]"></div>
+              <div className="w-[20%]">
+                <p className="text-white mt-2 text-start font-extrabold text-sm ">
+                  <p className="border-b-2 mb-2 pb-2 w-[70%]">
+                    Round 1 <br />
+                    Submission Deadline
+                    <br />
+                  </p>
+                  4 Nov
                 </p>
-                28 Sept
-              </p>
-              <div className="bg-white rounded-md font-bold text-[64px] p-2 h-[110px] w-[110px] text-center incen-cont">
-                <p className="incen-number">02</p>
               </div>
-              <p className="text-gray-600 mt-2 text-center font-extrabold text-sm">
-                Workshops
-                <br />
-                30 Sept - 21 Oct
-              </p>
             </div>
-            <div className="flex flex-col items-center">
-              <div className="bg-white rounded-md font-bold text-[64px] p-2 h-[110px] w-[110px] text-center incen-cont">
-                <p className="incen-number">03</p>
-              </div>
-              <p className="text-gray-600 mt-2 text-center font-extrabold text-sm">
-                Registration Deadline
-                <br />
-                20 Oct
-              </p>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="bg-white rounded-md font-bold text-[64px] p-2 h-[110px] w-[110px] text-center incen-cont">
-                <p className="incen-number">04</p>
-              </div>
-              <p className="text-gray-600 mt-2 text-center font-extrabold text-sm">
-                Round 1<br />
-                Submission Deadline
-                <br />4 Nov
-              </p>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="bg-white rounded-md font-bold text-[64px] p-2 h-[110px] w-[110px] text-center incen-cont">
-                <p className="incen-number">08</p>
-              </div>
-              <p className="text-gray-600 mt-2 text-center font-extrabold text-sm">
-                Round 2<br />
-                Submission Deadline
-                <br />
-                24 Dec
-              </p>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="bg-white rounded-md font-bold text-[64px] p-2 h-[110px] w-[110px] text-center incen-cont">
-                <p className="incen-number">07</p>
-              </div>
-              <p className="text-gray-600 mt-2 text-center font-extrabold text-sm">
-                Advanced Workshop
-                <br />
-                15 Nov - 20 Dec
-              </p>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="bg-white rounded-md font-bold text-[64px] p-2 h-[110px] w-[110px] text-center incen-cont">
-                <p className="incen-number">06</p>
-              </div>
-              <p className="text-gray-600 mt-2 text-center font-extrabold text-sm">
-                Mentor Allotment
-                <br />
-                15 Nov
-              </p>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="bg-white rounded-md font-bold text-[64px] p-2 h-[110px] w-[110px] text-center incen-cont">
-                <p className="incen-number">05</p>
-              </div>
-              <p className="text-gray-600 mt-2 text-center font-extrabold text-sm">
-                Round 1 Results
-                <br />
-                11 Nov
-              </p>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="bg-white rounded-md font-bold text-[64px] p-2 h-[110px] w-[110px] text-center incen-cont">
-                <p className="incen-number">09</p>
-              </div>
-              <p className="text-gray-600 mt-2 text-center font-extrabold text-sm">
-                Round 2 Results
-                <br />
-                31 Dec
-              </p>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="bg-white rounded-md font-bold text-[64px] p-2 h-[110px] w-[110px] text-center incen-cont">
-                <p className="incen-number">10</p>
-              </div>
-              <p className="text-gray-600 mt-2 text-center font-extrabold text-sm">
-                Final Round
-                <br />
-                Submission
-                <br />
-                15 Jan
-              </p>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="bg-white rounded-md font-bold text-[64px] p-2 h-[110px] w-[110px] text-center incen-cont">
-                <p className="incen-number">11</p>
-              </div>
-              <p className="text-gray-600 mt-2 text-center font-extrabold text-sm">
-                Final Closed Room
-                <br />
-                Pitching (Social Fest)
-                <br />
-                Jan 2024
-              </p>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="bg-white rounded-md font-bold text-[64px] p-2 h-[110px] w-[110px] text-center incen-cont">
-                <p className="incen-number">12</p>
-              </div>
-              <p className="text-gray-600 mt-2 text-center font-extrabold text-sm">
-                Results
-                <br />
-                Feb 2024
-              </p>
-            </div>
-          </div> */}
+            <div className="w-[80%] mx-auto mt-4 flex justify-between items-start relative">
+              <svg
+                className="absolute top-1/2 left-0 w-full h-1 z-0"
+                style={{ transform: "translateY(-50%)" }}
+              >
+                <line
+                  x1="0%"
+                  y1="50%"
+                  x2="28%"
+                  y2="50%"
+                  stroke="#e0e0e0"
+                  strokeWidth="4"
+                />
+                <line
+                  x1="28%"
+                  y1="50%"
+                  x2="56%"
+                  y2="50%"
+                  stroke="#e0e0e0"
+                  strokeWidth="4"
+                />
+                <line
+                  x1="56%"
+                  y1="50%"
+                  x2="84%"
+                  y2="50%"
+                  stroke="#e0e0e0"
+                  strokeWidth="4"
+                />
+                <line
+                  x1="84%"
+                  y1="50%"
+                  x2="100%"
+                  y2="50%"
+                  stroke="#e0e0e0"
+                  strokeWidth="4"
+                />
 
-          {/* <div className=" p-8 w-[80%] h-screen flex flex-col justify-center mx-auto">
-            <div className="flex flex-wrap justify-center">
-              {timelineData.slice(0, 4).map((item, index) => (
-                <TimelineItem key={index} {...item} />
-              ))}
+                <line
+                  x1="0%"
+                  y1="50%"
+                  x2="28%"
+                  y2="50%"
+                  stroke="#00FFFF"
+                  strokeWidth="4"
+                  className={`glow-line ${
+                    activeLineIndex === 0 ? "active" : ""
+                  }`}
+                />
+                <line
+                  x1="28%"
+                  y1="50%"
+                  x2="56%"
+                  y2="50%"
+                  stroke="#00FFFF"
+                  strokeWidth="4"
+                  className={`glow-line ${
+                    activeLineIndex === 1 ? "active" : ""
+                  }`}
+                />
+                <line
+                  x1="56%"
+                  y1="50%"
+                  x2="84%"
+                  y2="50%"
+                  stroke="#00FFFF"
+                  strokeWidth="4"
+                  className={`glow-line ${
+                    activeLineIndex === 2 ? "active" : ""
+                  }`}
+                />
+                <line
+                  x1="84%"
+                  y1="50%"
+                  x2="100%"
+                  y2="50%"
+                  stroke="#00FFFF"
+                  strokeWidth="4"
+                  className={`glow-line ${
+                    activeLineIndex === 3 ? "active" : ""
+                  }`}
+                />
+              </svg>
+              <div className=" w-[20%] z-1 relative">
+                <div className="bg-white rounded-md font-bold text-[64px] p-2 h-[110px] w-[110px] text-center incen-cont">
+                  <p className="incen-number">01</p>
+                </div>
+              </div>
+              <div className=" w-[20%] z-1 relative">
+                <div className="bg-white rounded-md font-bold text-[64px] p-2 h-[110px] w-[110px] text-center incen-cont">
+                  <p className="incen-number">02</p>
+                </div>
+              </div>
+              <div className=" w-[20%] z-1 relative">
+                <div className="bg-white rounded-md font-bold text-[64px] p-2 h-[110px] w-[110px] text-center incen-cont">
+                  <p className="incen-number">03</p>
+                </div>
+              </div>
+              <div className=" w-[20%] z-1 relative">
+                <div className="bg-white rounded-md font-bold text-[64px] p-2 h-[110px] w-[110px] text-center incen-cont">
+                  <p className="incen-number">04</p>
+                </div>
+              </div>
             </div>
-            <div className="flex flex-wrap justify-center">
-              {timelineData.slice(4, 8).map((item, index) => (
-                <TimelineItem key={index + 4} {...item} />
-              ))}
+            <div className="w-[80%] mx-auto flex justify-between items-start">
+              <div className="w-[20%]">
+                <p className="text-white mt-2 text-start font-extrabold text-sm ">
+                  <p className="border-b-2 mb-2 pb-2 w-[90%]">
+                    Registrations start
+                    <br />
+                    Questionnaire Submission
+                  </p>
+                  28 Sept
+                </p>
+              </div>
+              <div className="w-[20%]"></div>
+              <div className="w-[20%]">
+                <p className="text-white mt-2 text-start font-extrabold text-sm ">
+                  <p className="border-b-2 mb-2 pb-2 w-[70%]">
+                    Registration Deadline
+                    <br />
+                  </p>
+                  20 Oct
+                </p>
+              </div>
+              <div className="w-[20%]"></div>
             </div>
-            <div className="flex flex-wrap justify-center">
-              {timelineData.slice(8).map((item, index) => (
-                <TimelineItem key={index + 8} {...item} />
-              ))}
+          </div>
+          <div>
+            <div className="w-[80%] mx-auto flex justify-between items-end mt-12">
+              <div className="w-[20%]"></div>
+              <div className="w-[20%]">
+                <p className="text-white mt-2 text-start font-extrabold text-sm ">
+                  <p className="border-b-2 mb-2 pb-2 w-[70%]">
+                    Advanced Workshop
+                  </p>
+                  15 Nov - 20 Dec
+                </p>
+              </div>
+              <div className="w-[20%]"></div>
+              <div className="w-[20%]">
+                <p className="text-white mt-2 text-start font-extrabold text-sm ">
+                  <p className="border-b-2 mb-2 pb-2 w-[60%]">
+                    Round 1 Results
+                    <br />
+                  </p>
+                  11 Nov
+                </p>
+              </div>
             </div>
-          </div> */}
+            <div className="w-[80%] mx-auto mt-4 flex justify-between items-start relative">
+              <svg
+                className="absolute top-1/2 left-0 w-full h-1 z-0"
+                style={{ transform: "translateY(-50%)" }}
+              >
+                <line
+                  x1="-50%"
+                  y1="50%"
+                  x2="28%"
+                  y2="50%"
+                  stroke="#e0e0e0"
+                  strokeWidth="4"
+                />
+                <line
+                  x1="28%"
+                  y1="50%"
+                  x2="56%"
+                  y2="50%"
+                  stroke="#e0e0e0"
+                  strokeWidth="4"
+                />
+                <line
+                  x1="56%"
+                  y1="50%"
+                  x2="84%"
+                  y2="50%"
+                  stroke="#e0e0e0"
+                  strokeWidth="4"
+                />
+                <line
+                  x1="84%"
+                  y1="50%"
+                  x2="100%"
+                  y2="50%"
+                  stroke="#e0e0e0"
+                  strokeWidth="4"
+                />
 
-          <div className="w-[80%] mx-auto flex justify-between items-end">
-            <div className="w-[20%]"></div>
-            <div className="w-[20%]">
-              <p className="text-white mt-2 text-start font-extrabold text-sm ">
-                <p className="border-b-2 mb-2 pb-2 w-[50%]">
-                  Workshops
-                  <br />
-                </p>
-                30 Sept - 21 Oct
-              </p>
+                <line
+                  x1="-50%"
+                  y1="50%"
+                  x2="28%"
+                  y2="50%"
+                  stroke="#00FFFF"
+                  strokeWidth="4"
+                  className={`glow-line ${
+                    activeLineIndex === 0 ? "active" : ""
+                  }`}
+                />
+                <line
+                  x1="28%"
+                  y1="50%"
+                  x2="56%"
+                  y2="50%"
+                  stroke="#00FFFF"
+                  strokeWidth="4"
+                  className={`glow-line ${
+                    activeLineIndex === 1 ? "active" : ""
+                  }`}
+                />
+                <line
+                  x1="56%"
+                  y1="50%"
+                  x2="84%"
+                  y2="50%"
+                  stroke="#00FFFF"
+                  strokeWidth="4"
+                  className={`glow-line ${
+                    activeLineIndex === 2 ? "active" : ""
+                  }`}
+                />
+                <line
+                  x1="84%"
+                  y1="50%"
+                  x2="100%"
+                  y2="50%"
+                  stroke="#00FFFF"
+                  strokeWidth="4"
+                  className={`glow-line ${
+                    activeLineIndex === 3 ? "active" : ""
+                  }`}
+                />
+              </svg>
+              <div className=" w-[20%] z-1 relative">
+                <div className="bg-white rounded-md font-bold text-[64px] p-2 h-[110px] w-[110px] text-center incen-cont">
+                  <p className="incen-number">08</p>
+                </div>
+              </div>
+              <div className=" w-[20%] z-1 relative">
+                <div className="bg-white rounded-md font-bold text-[64px] p-2 h-[110px] w-[110px] text-center incen-cont">
+                  <p className="incen-number">07</p>
+                </div>
+              </div>
+              <div className=" w-[20%] z-1 relative">
+                <div className="bg-white rounded-md font-bold text-[64px] p-2 h-[110px] w-[110px] text-center incen-cont">
+                  <p className="incen-number">06</p>
+                </div>
+              </div>
+              <div className=" w-[20%] z-1 relative">
+                <div className="bg-white rounded-md font-bold text-[64px] p-2 h-[110px] w-[110px] text-center incen-cont">
+                  <p className="incen-number">05</p>
+                </div>
+              </div>
             </div>
-            <div className="w-[20%]"></div>
-            <div className="w-[20%]">
-              <p className="text-white mt-2 text-start font-extrabold text-sm ">
-                <p className="border-b-2 mb-2 pb-2 w-[70%]">
-                  Round 1 <br />
-                  Submission Deadline
-                  <br />
+            <div className="w-[80%] mx-auto flex justify-between items-start">
+              <div className="w-[20%]">
+                <p className="text-white mt-2 text-start font-extrabold text-sm ">
+                  <p className="border-b-2 mb-2 pb-2 w-[70%]">
+                    Round 2
+                    <br />
+                    Submission Deadline
+                  </p>
+                  24 Dec
                 </p>
-                4 Nov
-              </p>
+              </div>
+              <div className="w-[20%]"></div>
+              <div className="w-[20%]">
+                <p className="text-white mt-2 text-start font-extrabold text-sm ">
+                  <p className="border-b-2 mb-2 pb-2 w-[60%]">
+                    Mentor Allotment
+                    <br />
+                  </p>
+                  15 Nov
+                </p>
+              </div>
+              <div className="w-[20%]"></div>
             </div>
           </div>
-          <div className="w-[80%] mx-auto mt-4 flex justify-between items-start relative">
-            <svg
-              width="1020"
-              height="520"
-              viewBox="0 0 1020 520"
-              className="absolute top-14 left-0 w-full z-0"
-            >
-              <path
-                d="M10 10 H1010 V510 H10"
-                fill="none"
-                stroke="#e0e0e0"
-                strokeWidth="4"
-              />
-              <path
-                d="M10 10 H1010 V510 H10"
-                fill="none"
-                stroke="#3498db"
-                strokeWidth="4"
-                className="animated-path"
-              />
-            </svg>
-            {/* <svg
-              className="absolute top-14 left-0 w-full h-2 z-0"
-            >
-              <line
-                x1="0%"
-                y1="50%"
-                x2="150%"
-                y2="50%"
-                stroke="white"
-                strokeWidth="4"
-              />
-              <path d="M 0, 50 L 100, 50 L 100, 150 L 200, 150" stroke="white" strokeWidth="4" />
-            </svg> */}
-            {/* <div class="glow-light"></div> */}
-            <div className=" w-[20%] z-1 relative">
-              <div className="bg-white rounded-md font-bold text-[64px] p-2 h-[110px] w-[110px] text-center incen-cont">
-                <p className="incen-number">01</p>
-              </div>
-            </div>
-            <div className=" w-[20%] z-1 relative">
-              <div className="bg-white rounded-md font-bold text-[64px] p-2 h-[110px] w-[110px] text-center incen-cont">
-                <p className="incen-number">02</p>
-              </div>
-            </div>
-            <div className=" w-[20%] z-1 relative">
-              <div className="bg-white rounded-md font-bold text-[64px] p-2 h-[110px] w-[110px] text-center incen-cont">
-                <p className="incen-number">03</p>
-              </div>
-            </div>
-            <div className=" w-[20%] z-1 relative">
-              <div className="bg-white rounded-md font-bold text-[64px] p-2 h-[110px] w-[110px] text-center incen-cont">
-                <p className="incen-number">04</p>
-              </div>
-            </div>
-          </div>
-          <div className="w-[80%] mx-auto flex justify-between items-start">
-            <div className="w-[20%]">
-              <p className="text-white mt-2 text-start font-extrabold text-sm ">
-                <p className="border-b-2 mb-2 pb-2 w-[90%]">
-                  Registrations start
-                  <br />
-                  Questionnaire Submission
+          <div>
+            <div className="w-[80%] mx-auto flex justify-between items-end mt-12">
+              <div className="w-[20%]"></div>
+              <div className="w-[20%]">
+                <p className="text-white mt-2 text-start font-extrabold text-sm ">
+                  <p className="border-b-2 mb-2 pb-2 w-[50%]">
+                    Final Round
+                    <br />
+                    Submission
+                  </p>
+                  15 Jan
                 </p>
-                28 Sept
-              </p>
-            </div>
-            <div className="w-[20%]"></div>
-            <div className="w-[20%]">
-              <p className="text-white mt-2 text-start font-extrabold text-sm ">
-                <p className="border-b-2 mb-2 pb-2 w-[70%]">
-                  Registration Deadline
-                  <br />
+              </div>
+              <div className="w-[20%]"></div>
+              <div className="w-[20%]">
+                <p className="text-white mt-2 text-start font-extrabold text-sm ">
+                  <p className="border-b-2 mb-2 pb-2 w-[30%]">
+                    Results
+                    <br />
+                  </p>
+                  Feb 2024
                 </p>
-                20 Oct
-              </p>
-            </div>
-            <div className="w-[20%]"></div>
-          </div>
-          <div className="w-[80%] mx-auto flex justify-between items-end mt-12">
-            <div className="w-[20%]"></div>
-            <div className="w-[20%]">
-              <p className="text-white mt-2 text-start font-extrabold text-sm ">
-                <p className="border-b-2 mb-2 pb-2 w-[70%]">
-                  Advanced Workshop
-                </p>
-                15 Nov - 20 Dec
-              </p>
-            </div>
-            <div className="w-[20%]"></div>
-            <div className="w-[20%]">
-              <p className="text-white mt-2 text-start font-extrabold text-sm ">
-                <p className="border-b-2 mb-2 pb-2 w-[60%]">
-                  Round 1 Results
-                  <br />
-                </p>
-                11 Nov
-              </p>
-            </div>
-          </div>
-          <div className="w-[80%] mx-auto mt-4 flex justify-between items-start">
-            <div className=" w-[20%]">
-              <div className="bg-white rounded-md font-bold text-[64px] p-2 h-[110px] w-[110px] text-center incen-cont">
-                <p className="incen-number">08</p>
               </div>
             </div>
-            <div className=" w-[20%]">
-              <div className="bg-white rounded-md font-bold text-[64px] p-2 h-[110px] w-[110px] text-center incen-cont">
-                <p className="incen-number">07</p>
+            <div className="w-[80%] mx-auto mt-4 flex justify-between items-start relative">
+              <svg
+                className="absolute top-1/2 left-0 w-full h-1 z-0"
+                style={{ transform: "translateY(-50%)" }}
+              >
+                <line
+                  x1="-50%"
+                  y1="50%"
+                  x2="28%"
+                  y2="50%"
+                  stroke="#e0e0e0"
+                  strokeWidth="4"
+                />
+                <line
+                  x1="28%"
+                  y1="50%"
+                  x2="56%"
+                  y2="50%"
+                  stroke="#e0e0e0"
+                  strokeWidth="4"
+                />
+                <line
+                  x1="56%"
+                  y1="50%"
+                  x2="84%"
+                  y2="50%"
+                  stroke="#e0e0e0"
+                  strokeWidth="4"
+                />
+                <line
+                  x1="84%"
+                  y1="50%"
+                  x2="100%"
+                  y2="50%"
+                  stroke="#e0e0e0"
+                  strokeWidth="4"
+                />
+
+                <line
+                  x1="-50%"
+                  y1="50%"
+                  x2="28%"
+                  y2="50%"
+                  stroke="#00FFFF"
+                  strokeWidth="4"
+                  className={`glow-line ${
+                    activeLineIndex === 0 ? "active" : ""
+                  }`}
+                />
+                <line
+                  x1="28%"
+                  y1="50%"
+                  x2="56%"
+                  y2="50%"
+                  stroke="#00FFFF"
+                  strokeWidth="4"
+                  className={`glow-line ${
+                    activeLineIndex === 1 ? "active" : ""
+                  }`}
+                />
+                <line
+                  x1="56%"
+                  y1="50%"
+                  x2="84%"
+                  y2="50%"
+                  stroke="#00FFFF"
+                  strokeWidth="4"
+                  className={`glow-line ${
+                    activeLineIndex === 2 ? "active" : ""
+                  }`}
+                />
+                <line
+                  x1="84%"
+                  y1="50%"
+                  x2="100%"
+                  y2="50%"
+                  stroke="#00FFFF"
+                  strokeWidth="4"
+                  className={`glow-line ${
+                    activeLineIndex === 3 ? "active" : ""
+                  }`}
+                />
+              </svg>
+              <div className=" w-[20%] z-1 relative">
+                <div className="bg-white rounded-md font-bold text-[64px] p-2 h-[110px] w-[110px] text-center incen-cont">
+                  <p className="incen-number">09</p>
+                </div>
+              </div>
+              <div className=" w-[20%] z-1 relative">
+                <div className="bg-white rounded-md font-bold text-[64px] p-2 h-[110px] w-[110px] text-center incen-cont">
+                  <p className="incen-number">10</p>
+                </div>
+              </div>
+              <div className=" w-[20%] z-1 relative">
+                <div className="bg-white rounded-md font-bold text-[64px] p-2 h-[110px] w-[110px] text-center incen-cont">
+                  <p className="incen-number">11</p>
+                </div>
+              </div>
+              <div className=" w-[20%] z-1 relative">
+                <div className="bg-white rounded-md font-bold text-[64px] p-2 h-[110px] w-[110px] text-center incen-cont">
+                  <p className="incen-number">12</p>
+                </div>
               </div>
             </div>
-            <div className=" w-[20%]">
-              <div className="bg-white rounded-md font-bold text-[64px] p-2 h-[110px] w-[110px] text-center incen-cont">
-                <p className="incen-number">06</p>
-              </div>
-            </div>
-            <div className=" w-[20%]">
-              <div className="bg-white rounded-md font-bold text-[64px] p-2 h-[110px] w-[110px] text-center incen-cont">
-                <p className="incen-number">05</p>
-              </div>
-            </div>
-          </div>
-          <div className="w-[80%] mx-auto flex justify-between items-start">
-            <div className="w-[20%]">
-              <p className="text-white mt-2 text-start font-extrabold text-sm ">
-                <p className="border-b-2 mb-2 pb-2 w-[70%]">
-                  Round 2
-                  <br />
-                  Submission Deadline
+            <div className="w-[80%] mx-auto flex justify-between items-start">
+              <div className="w-[20%]">
+                <p className="text-white mt-2 text-start font-extrabold text-sm ">
+                  <p className="border-b-2 mb-2 pb-2 w-[60%]">
+                    Round 2 Results
+                  </p>
+                  31 Dec
                 </p>
-                24 Dec
-              </p>
-            </div>
-            <div className="w-[20%]"></div>
-            <div className="w-[20%]">
-              <p className="text-white mt-2 text-start font-extrabold text-sm ">
-                <p className="border-b-2 mb-2 pb-2 w-[60%]">
-                  Mentor Allotment
-                  <br />
-                </p>
-                15 Nov
-              </p>
-            </div>
-            <div className="w-[20%]"></div>
-          </div>
-          <div className="w-[80%] mx-auto flex justify-between items-end mt-12">
-            <div className="w-[20%]"></div>
-            <div className="w-[20%]">
-              <p className="text-white mt-2 text-start font-extrabold text-sm ">
-                <p className="border-b-2 mb-2 pb-2 w-[50%]">
-                  Final Round
-                  <br />
-                  Submission
-                </p>
-                15 Jan
-              </p>
-            </div>
-            <div className="w-[20%]"></div>
-            <div className="w-[20%]">
-              <p className="text-white mt-2 text-start font-extrabold text-sm ">
-                <p className="border-b-2 mb-2 pb-2 w-[30%]">
-                  Results
-                  <br />
-                </p>
-                Feb 2024
-              </p>
-            </div>
-          </div>
-          <div className="w-[80%] mx-auto mt-4 flex justify-between items-start">
-            <div className=" w-[20%]">
-              <div className="bg-white rounded-md font-bold text-[64px] p-2 h-[110px] w-[110px] text-center incen-cont">
-                <p className="incen-number">09</p>
               </div>
-            </div>
-            <div className=" w-[20%]">
-              <div className="bg-white rounded-md font-bold text-[64px] p-2 h-[110px] w-[110px] text-center incen-cont">
-                <p className="incen-number">10</p>
-              </div>
-            </div>
-            <div className=" w-[20%]">
-              <div className="bg-white rounded-md font-bold text-[64px] p-2 h-[110px] w-[110px] text-center incen-cont">
-                <p className="incen-number">11</p>
-              </div>
-            </div>
-            <div className=" w-[20%]">
-              <div className="bg-white rounded-md font-bold text-[64px] p-2 h-[110px] w-[110px] text-center incen-cont">
-                <p className="incen-number">12</p>
-              </div>
-            </div>
-          </div>
-          <div className="w-[80%] mx-auto flex justify-between items-start">
-            <div className="w-[20%]">
-              <p className="text-white mt-2 text-start font-extrabold text-sm ">
-                <p className="border-b-2 mb-2 pb-2 w-[60%]">Round 2 Results</p>
-                31 Dec
-              </p>
-            </div>
-            <div className="w-[20%]"></div>
-            <div className="w-[20%]">
-              <p className="text-white mt-2 text-start font-extrabold text-sm ">
-                <p className="border-b-2 mb-2 pb-2 w-[80%]">
-                  Final Closed Room
-                  <br />
-                  Pitching ( Social Fest)
+              <div className="w-[20%]"></div>
+              <div className="w-[20%]">
+                <p className="text-white mt-2 text-start font-extrabold text-sm ">
+                  <p className="border-b-2 mb-2 pb-2 w-[80%]">
+                    Final Closed Room
+                    <br />
+                    Pitching ( Social Fest)
+                  </p>
+                  Jan 2024
                 </p>
-                Jan 2024
-              </p>
+              </div>
+              <div className="w-[20%]"></div>
             </div>
-            <div className="w-[20%]"></div>
           </div>
         </div>
         <div>

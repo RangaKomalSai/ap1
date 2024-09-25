@@ -95,18 +95,10 @@ function ActionPlanInfo() {
           <img
             src={ap}
             alt="Logo"
-            className="h-64 w-auto"
+            className="h-80 w-auto"
             draggable="false"
             data-aos="fade-right"
-          />{" "}
-          <img
-            src={apsub}
-            alt="Logo"
-            className="h-24 w-auto"
-            draggable="false"
-            data-aos="fade-right"
-            data-aos-delay="200"
-          />{" "}
+          />
           <div className="flex justify-end items-center w-full my-4 mr-32">
             <Link to="/register">
               <button

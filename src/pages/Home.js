@@ -1,5 +1,5 @@
 // pages/Home.js
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import ActionPlanInfo from "./HomeSections/ActionPlanInfo";
 import Benefits from "./HomeSections/Benefits";
 import Testimonials from "./HomeSections/Testimonials";
@@ -26,8 +26,7 @@ function Home() {
       <Benefits />
       <Testimonials />
       <ContactUs />
-      <Footer/>
-      <h1 className="bg-black text-center font-montserrat font-semibold">Made with ❤️ by RKS</h1>
+      <Footer />
     </div>
   );
 }
