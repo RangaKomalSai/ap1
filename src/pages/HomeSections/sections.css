@@ -51,19 +51,3 @@
     fill: black;
     transform: scale(1.10);
   }
-
-  /* #youtube  > svg:hover {
-    fill: red;
-    transform: scale(1.10);
-    animation: fill-color-animation 1s ease-in-out;
-
-  }
-
-  @keyframes fill-color-animation {
-    10% {
-    clip-path: polygon(0 96%, 100% 96%, 100% 100%, 0% 100%);
-  }
-  100% {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-  }
-  } */

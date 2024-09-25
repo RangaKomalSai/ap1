@@ -1,6 +1,6 @@
 // components/Benefits.js
 import React from "react";
-import SectionHeading from "../../components/SectionHeading";
+import SectionHeading from "../../components/SectionHeading.js";
 import w1 from "../../assets/w1.svg";
 import w2 from "../../assets/w2.svg";
 import w3 from "../../assets/w3.svg";

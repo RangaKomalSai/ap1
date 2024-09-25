@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Footer from "../components/Footer.js";
 import ContactUs from "./HomeSections/ContactUs.js";
-import SectionHeading from "../components/SectionHeading";
+import SectionHeading from "../components/SectionHeading.js";
 import axios from "axios";
 import toast from "react-hot-toast";
 

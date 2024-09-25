@@ -1,6 +1,6 @@
 // components/ContactUs.js
 import React from "react";
-import SectionHeading from "../../components/SectionHeading";
+import SectionHeading from "../../components/SectionHeading.js";
 import { Link } from "react-router-dom";
 
 function ContactUs() {

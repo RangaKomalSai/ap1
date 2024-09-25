@@ -1,7 +1,6 @@
 // components/Header.js
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { Link as ScrollLink } from "react-scroll";
 import logo from "../assets/ab_logo.svg";
 
 function Header() {
@@ -33,9 +32,9 @@ function Header() {
           </li>
           <li>
             <Link
-              to="http://abhyudayiitb.org/competitions.html"
-              target="_blank"
+              to="/competition"
               className="hover:text-blue-300"
+              onClick={(event) => handleLinkClick(event, "/competition")}
             >
               Competition
             </Link>
@@ -50,7 +49,11 @@ function Header() {
             </Link>
           </li>
           <li>
-            <Link to="/partners" className="hover:text-blue-300">
+            <Link
+              to="/partners"
+              className="hover:text-blue-300"
+              onClick={(event) => handleLinkClick(event, "/partners")}
+            >
               Partners & Sponsors
             </Link>
           </li>
@@ -64,7 +67,11 @@ function Header() {
             </Link>
           </li>
           <li>
-            <Link to="/faqs" className="hover:text-blue-300">
+            <Link
+              to="/faqs"
+              className="hover:text-blue-300"
+              onClick={(event) => handleLinkClick(event, "/faqs")}
+            >
               FAQs
             </Link>
           </li>

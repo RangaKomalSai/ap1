@@ -2,7 +2,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import ap from "../../assets/ap.svg";
-import apsub from "../../assets/apsub.svg";
 import "./sections.css";
 import SectionHeading from "../../components/SectionHeading.js";
 

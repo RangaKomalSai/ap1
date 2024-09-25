@@ -80,7 +80,7 @@ function Faqs() {
             </div>
           </div>
         </div>
-        <style jsx>
+        <style jsx="true">
           {`
             .faq-item {
               position: relative;
@@ -107,7 +107,7 @@ function Faqs() {
             }
           `}
         </style>
-      </section>{" "}
+      </section>
       <Footer />
     </>
   );

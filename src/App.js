@@ -6,14 +6,12 @@ import "aos/dist/aos.css";
 import Header from "./components/Header.js";
 import Home from "./pages/Home.js";
 import Register from "./pages/Register.js";
-import Incentives from "./pages/Incentives.js";
-import ThreeJSScene from "./components/Globe.js";
+import Competition from "./pages/Competition.js";
 import Faqs from "./pages/Faqs.js";
 import ContactUs from "./pages/ContactUs.js";
 // import Footer from "./components/Footer";
 
 function App() {
-
   useEffect(() => {
     const initAOS = async () => {
       const AOS = (await import("aos")).default;
@@ -35,10 +33,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/incentives" element={<Incentives />} />
+          <Route path="/competition" element={<Competition />} />
           <Route path="/faqs" element={<Faqs />} />
           <Route path="/contactus" element={<ContactUs />} />
-          <Route path="/globe" element={<ThreeJSScene />} />
         </Routes>
         {/* <Footer /> This also remains static */}
       </div>
