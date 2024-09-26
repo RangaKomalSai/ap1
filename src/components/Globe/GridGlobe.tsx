@@ -392,11 +392,40 @@ const GridGlobe = () => {
   ];
 
   return (
-    <div className="w-full h-[50vh] z-10">
-      <Suspense fallback={<div>Loading...</div>}>
-        <World data={sampleArcs} globeConfig={globeConfig} />
-      </Suspense>
-    </div>
+    <>
+      <div className="w-full h-[70vh] md:h-screen z-10 ">
+        <Suspense
+          fallback={
+            <div className="flex items-center justify-center">
+              <div className="loader mr-2"></div>
+            </div>
+          }
+        >
+          <World data={sampleArcs} globeConfig={globeConfig} />
+        </Suspense>
+      </div>
+      <style>
+        {`
+          .loader {
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-top: 4px solid #fff;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            animation: spin 1s linear infinite;
+          }
+
+          @keyframes spin {
+            0% {
+              transform: rotate(0deg);
+            }
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+        `}
+      </style>
+    </>
     // <div className="w-full h-full">
     //   <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-96 px-4">
     //     <div className="absolute w-full bottom-0 inset-x-0 h-40 pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
