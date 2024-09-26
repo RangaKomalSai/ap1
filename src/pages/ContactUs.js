@@ -63,7 +63,7 @@ function ContactUsPage() {
         <SectionHeading back_heading="WRITE" main_heading="Write to us" />
         <form
           onSubmit={handleSubmit}
-          className="mx-auto p-4 w-[60%] max-w-[600px] shadow-md"
+          className="mx-auto p-4 w-[80%] md:w-[60%] max-w-[600px] shadow-md"
         >
           <div className="mb-4">
             <label
@@ -140,7 +140,7 @@ function ContactUsPage() {
             <button
               type="submit"
               disabled={isLoading}
-              className="bg-[#41BDEE] hover:bg-blue-600 text-[20px] text-white font-extrabold py-2 px-4 rounded-md text-lg"
+              className="bg-[#41BDEE] hover:bg-blue-600 text-[14px] md:text-[20px] text-white font-extrabold py-2 px-4 rounded-md text-lg"
             >
               {isLoading ? (
                 <div className="flex items-center justify-center">

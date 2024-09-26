@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <section className="contact-us bg-primary text-white py-16 px-16 font-montserrat">
+    <section className="contact-us bg-primary text-white py-16 md:px-16 px-4 font-montserrat">
       <div className="container mx-auto">
-        <div className="flex justify-around items-center">
+        <div className="flex flex-wrap justify-around items-center overflow-hidden">
           <div>
             <h2 className="font-extrabold text-2xl mb-4">FOLLOW US:</h2>
             <ul className="pb-4 text-white mx-auto flex flex-row justify-between items-center gap-4 lg:gap-8 text-xl">
@@ -116,7 +116,8 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="h-[200px] w-1 bg-white mx-4"></div>
+          <div className="hidden md:block h-[200px] w-1 bg-white mx-4"></div>
+          <div className="md:hidden w-[200px] h-1 bg-white md:mx-4 mb-8 mt-8 self-start"></div>
           <div className="text-xl font-semibold text-center">
             <h2 className="font-bold mb-4">REACH OUT</h2>
             <Link to="https://maps.app.goo.gl/seG6qxwWHYLZWjrG7" className="hover:underline">

@@ -101,7 +101,7 @@ function ActionPlanInfo() {
           <div className="flex justify-center md:justify-end items-center w-full my-4 md:mr-32">
             <Link to="/register">
               <button
-                className="bg-[#41BDEE] hover:bg-blue-600 text-[20px] text-white font-extrabold py-2 px-4 mt-10 md:mt-0 rounded-full text-lg"
+                className="bg-[#41BDEE] hover:bg-blue-600 text-[20px] md:text-[24px] text-white font-extrabold py-2 px-4 mt-10 md:mt-0 rounded-full text-lg"
                 data-aos="zoom-in-up"
               >
                 REGISTER NOW

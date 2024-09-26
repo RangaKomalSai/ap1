@@ -11,34 +11,44 @@ function Faqs() {
 
   const faqs = [
     {
-      question: "Who can participate in the program?",
+      question: "Who can participate in the Action Plan Competition?",
       answer:
-        "All college students and school students from 8th to 12th grade are eligible to participate in the program.",
+        "Anyone, from students to working professionals across the nation, can participate. For more information, refer to the Rules Section in the Competition Tab.",
     },
     {
-      question: "How do I register for the program?",
-      answer:
-        'To register, click on the "Register Now" button on our website. You should login through google and then fill in your details, choose whether you are a school or college representative.',
+      question:
+        "What is the registration/participation fee for the Action Plan?",
+      answer: "There is NO registration/participation fee.",
     },
     {
-      question: "What kind of tasks will we be doing?",
+      question: "How can I confirm that I have registered successfully?",
       answer:
-        "Participants will engage in various social activities and challenges designed to create positive change in society. There will be both group and individual tasks.",
+        "After registering, you will receive a confirmation mail on the e-mail ID you have registered with.",
     },
     {
-      question: "How are participants grouped?",
+      question:
+        "What should be the size of my team and where do I register my team?",
       answer:
-        "Students from the same college will be grouped together. There are both group and individual tasks. For group tasks, every group member will receive the same points.",
+        "Your team can consist of 2-4 members. The registration confirmation link will include the link to a form where you can add your team members. Only the Team Leader is supposed to register on the website.",
     },
     {
-      question: "Can I participate in both individual and group tasks?",
+      question: "Where do I have to submit the Questionnaire?",
       answer:
-        "Yes, you can participate in both individual and group tasks. Your performance in these tasks will contribute to your points and standings on the respective leaderboards.",
+        "The registration confirmation link will include the link to the submission of the Questionnaire.",
     },
     {
-      question: "How can I see my position on the leaderboard?",
+      question: "Can a team consist of people from different colleges?",
+      answer: "Yes, teams can consist of individuals from different colleges.",
+    },
+    {
+      question: "Does my Action Plan have to be only technology-related?",
       answer:
-        "Your position on the college and individual leaderboards will be visible based on the points you have earned. The leaderboards will be regularly updated to reflect the latest standings.",
+        "No, we encourage all entries that can be developed into an Action plan. It must fit into the model of Activism, Not-for-profit (NGO), or Social entrepreneurship.",
+    },
+    {
+      question: "How does a mentoring program work?",
+      answer:
+        "Mentors are experienced sector-specific experts who provide assistance and guidance to the participants. They will offer suggestions and feedback to help participants develop and refine their model. Participants are not required to have a mentor, although teams are strongly encouraged to take advantage of this opportunity.",
     },
   ];
 

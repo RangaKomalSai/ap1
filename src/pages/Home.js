@@ -13,7 +13,7 @@ function Home() {
       <Benefits />
       {/* <Testimonials /> */}
       <ContactUs />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

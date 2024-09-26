@@ -5,7 +5,10 @@ import { Link } from "react-router-dom";
 
 function ContactUs() {
   return (
-    <section className="contact-us bg-primary text-white py-16 px-8 md:px-16 font-montserrat" id="contact">
+    <section
+      className="contact-us bg-primary text-white py-16 px-8 md:px-16 font-montserrat"
+      id="contact"
+    >
       <div className="container mx-auto text-center">
         <SectionHeading back_heading="CONTACT" main_heading="Contact Us" />
         <div className="flex flex-wrap gap-5 md:gap-28 justify-center items-center">
@@ -23,9 +26,9 @@ function ContactUs() {
                 ramya.abhyuday@gmail.com
               </p>
             </Link>
-            <Link to="tel:+918144020711">
+            <Link to="tel:+918456961919">
               <p data-aos="zoom-in-up" className="hover:underline">
-                81440 20711
+                84569 61919
               </p>
             </Link>
           </div>
