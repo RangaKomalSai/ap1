@@ -66,7 +66,7 @@ function ContactUsPage() {
   };
 
   return (
-    <section className="action-plan-info bg-primary text-white py-16 font-montserrat">
+    <section className="action-plan-info bg-primary text-white py-16 font-montserrat pt-[20vh]">
       <div className="container mx-auto">
         <SectionHeading back_heading="WRITE" main_heading="Write to us" />
         <form

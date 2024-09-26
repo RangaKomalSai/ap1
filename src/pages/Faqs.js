@@ -56,7 +56,7 @@ function Faqs() {
     <>
       <section
         id="faqs"
-        className=" bg-primary text-white py-16 font-montserrat pb-[200px]"
+        className=" bg-primary text-white py-16 font-montserrat pb-[200px] pt-[20vh]"
       >
         <div className="container mx-auto px-4">
           <div className="flex flex-col justify-center items-center">

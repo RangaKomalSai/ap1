@@ -95,7 +95,7 @@ function Register() {
   };
 
   return (
-    <section className="action-plan-info bg-primary text-white py-16 font-montserrat">
+    <section className="action-plan-info bg-primary text-white py-16 font-montserrat pt-[20vh]">
       <div className="container mx-auto">
         <SectionHeading back_heading="REGISTER" main_heading="Register" />
         <div className="text-white p-10 rounded-md w-[85%] md:w-[60%] mx-auto">

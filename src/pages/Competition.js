@@ -20,7 +20,7 @@ function Competition() {
   }, []);
 
   return (
-    <section className="action-plan-info bg-primary text-white py-16 font-montserrat overflow-hidden">
+    <section className="action-plan-info bg-primary text-white py-16 font-montserrat overflow-hidden pt-[20vh]">
       <div className="container mx-auto">
         <div className="mb-32">
           <div className="md:hidden bg-gradient-to-tr from-[#ffffff] to-[#2635BA] text-[#311B92] text-center font-extrabold px-2 py-2 rounded-lg w-[200px] h-[90px] mb-6 mx-auto">
