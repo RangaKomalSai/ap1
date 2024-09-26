@@ -9,6 +9,7 @@ import Competition from "./pages/Competition.js";
 import Faqs from "./pages/Faqs.js";
 import ContactUs from "./pages/ContactUs.js";
 import ResHeader from "./components/ResHeader.js";
+import Header from "./components/Header.js";
 // import Footer from "./components/Footer";
 
 function App() {
@@ -29,7 +30,7 @@ function App() {
   return (
     <Router>
       <div className="App bg-primary text-white min-h-screen">
-        {/* <Header /> This remains static */}
+        {/* <Header /> */}
         <ResHeader/>
         <Routes>
           <Route path="/" element={<Home />} />

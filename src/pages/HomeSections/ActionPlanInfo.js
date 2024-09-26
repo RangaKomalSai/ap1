@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import ap from "../../assets/ap.svg";
 import "./sections.css";
 import SectionHeading from "../../components/SectionHeading.js";
+import Preloader from "../../components/Preloader.js";
 
 function ActionPlanInfo() {
   const [entries, setEntries] = useState(0);
@@ -11,6 +12,18 @@ function ActionPlanInfo() {
   const [mentors, setMentors] = useState(0);
   const [hasAnimated, setHasAnimated] = useState(false); // Track whether animation has started
   const statsRef = useRef(null);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulating loading of 3D assets or other heavy content
+    const loadAssets = async () => {
+      // Simulate a delay for loading assets like 3D elements
+      await new Promise((resolve) => setTimeout(resolve, 2000)); // Simulated load time, replace with actual asset loading
+      setIsLoading(false); // Set loading to false when assets are loaded
+    };
+
+    loadAssets();
+  }, []);
 
   // Function to start the counting animation
   const startCountingAnimation = () => {
@@ -84,8 +97,12 @@ function ActionPlanInfo() {
     };
   }, [hasAnimated]);
 
+  if (isLoading) {
+    return <Preloader />;
+  }
+
   return (
-    <section className="action-plan-info bg-primary text-white py-16 font-montserrat">
+    <section className="action-plan-info bg-primary text-white py-16 font-montserrat pt-[20vh]">
       <div className="container mx-auto text-center">
         <div
           className="flex flex-col justify-start items-center md:items-end w-full md:w-[60%] min-h-[40vh] md:h-[70vh]"
