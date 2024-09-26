@@ -39,12 +39,10 @@ function ContactUsPage() {
     }
     setIsLoading(true);
 
-    const { name, email, contactNumber, message } = formData;
-    const body = `Name: ${name}\nEmail: ${email}\nPhone Number: ${contactNumber}\nMessage: ${message}`;
-    const promise = axios.post("http://localhost:4002/api/email/send-email", {
-      recipientEmail: email,
-      body: body,
-    });
+    const promise = axios.post(
+      "http://localhost:4002/api/email/send-email",
+      formData
+    );
 
     toast.promise(promise, {
       loading: "Sending...",
@@ -52,9 +50,19 @@ function ContactUsPage() {
       error: <b>Couldn't send email!</b>,
     });
 
-    promise.finally(() => {
-      setIsLoading(false); // Set loading state to false
-    });
+    // Reset formData fields to empty after successful submission
+    promise
+      .then(() => {
+        setFormData({
+          name: "",
+          contactNumber: "",
+          email: "",
+          message: "",
+        });
+      })
+      .finally(() => {
+        setIsLoading(false);
+      });
   };
 
   return (
