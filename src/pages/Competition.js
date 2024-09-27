@@ -188,37 +188,37 @@ function Competition() {
               ></div>
 
               <div className="md:hidden absolute top-[4.16%] left-[25%] right-[1.5%] h-1 overflow-hidden">
-                <div className="w-full h-full bg-gradient-to-r from-fuchsia-500 via-cyan-500 to-fuchsia-500 animate-move-gradient-1"></div>
+                <div className="w-full h-full bg-gradient-to-r from-fuchsia-500 via-cyan-500 to-fuchsia-500 "></div>
               </div>
               <div className="md:hidden absolute top-[4.16%] right-[1.5%] w-1 h-[16.66%] overflow-hidden">
-                <div className="w-full h-full bg-gradient-to-b from-fuchsia-500 via-cyan-500 to-fuchsia-500 animate-move-gradient-2"></div>
+                <div className="w-full h-full bg-gradient-to-b from-fuchsia-500 via-cyan-500 to-fuchsia-500 "></div>
               </div>
               <div className="md:hidden absolute top-[20.83%] left-[1.5%] right-[1.5%] h-1 overflow-hidden">
-                <div className="w-full h-full bg-gradient-to-r from-fuchsia-500 via-cyan-500 to-fuchsia-500 animate-move-gradient-3"></div>
+                <div className="w-full h-full bg-gradient-to-r from-fuchsia-500 via-cyan-500 to-fuchsia-500 "></div>
               </div>
               <div className="md:hidden absolute top-[20.83%] left-[1.5%] w-1 h-[16.66%] overflow-hidden">
-                <div className="w-full h-full bg-gradient-to-b from-fuchsia-500 via-cyan-500 to-fuchsia-500 animate-move-gradient-4"></div>
+                <div className="w-full h-full bg-gradient-to-b from-fuchsia-500 via-cyan-500 to-fuchsia-500 "></div>
               </div>
               <div className="md:hidden absolute top-[37.48%] left-[1.5%] right-[1.5%] h-1 overflow-hidden">
-                <div className="w-full h-full bg-gradient-to-r from-fuchsia-500 via-cyan-500 to-fuchsia-500 animate-move-gradient-5"></div>
+                <div className="w-full h-full bg-gradient-to-r from-fuchsia-500 via-cyan-500 to-fuchsia-500 "></div>
               </div>
               <div className="md:hidden absolute top-[37.48%] right-[1.5%] w-1 h-[16.66%] overflow-hidden">
-                <div className="w-full h-full bg-gradient-to-b from-fuchsia-500 via-cyan-500 to-fuchsia-500 animate-move-gradient-4"></div>
+                <div className="w-full h-full bg-gradient-to-b from-fuchsia-500 via-cyan-500 to-fuchsia-500 "></div>
               </div>
               <div className="md:hidden absolute top-[54.14%] left-[1.5%] right-[1.5%] h-1 overflow-hidden">
-                <div className="w-full h-full bg-gradient-to-r from-fuchsia-500 via-cyan-500 to-fuchsia-500 animate-move-gradient-5"></div>
+                <div className="w-full h-full bg-gradient-to-r from-fuchsia-500 via-cyan-500 to-fuchsia-500 "></div>
               </div>
               <div className="md:hidden absolute top-[54.14%] left-[1.5%] w-1 h-[16.66%] overflow-hidden">
-                <div className="w-full h-full bg-gradient-to-b from-fuchsia-500 via-cyan-500 to-fuchsia-500 animate-move-gradient-4"></div>
+                <div className="w-full h-full bg-gradient-to-b from-fuchsia-500 via-cyan-500 to-fuchsia-500 "></div>
               </div>
               <div className="md:hidden absolute top-[70.8%] left-[1.5%] right-[1.5%] h-1 overflow-hidden">
-                <div className="w-full h-full bg-gradient-to-r from-fuchsia-500 via-cyan-500 to-fuchsia-500 animate-move-gradient-5"></div>
+                <div className="w-full h-full bg-gradient-to-r from-fuchsia-500 via-cyan-500 to-fuchsia-500 "></div>
               </div>
               <div className="md:hidden absolute top-[70.8%] right-[1.5%] w-1 h-[16.66%] overflow-hidden">
-                <div className="w-full h-full bg-gradient-to-b from-fuchsia-500 via-cyan-500 to-fuchsia-500 animate-move-gradient-4"></div>
+                <div className="w-full h-full bg-gradient-to-b from-fuchsia-500 via-cyan-500 to-fuchsia-500 "></div>
               </div>
               <div className="md:hidden absolute top-[87.46%] left-[12.5%] right-[1.5%] h-1 overflow-hidden">
-                <div className="w-full h-full bg-gradient-to-r from-fuchsia-500 via-cyan-500 to-fuchsia-500 animate-move-gradient-5"></div>
+                <div className="w-full h-full bg-gradient-to-r from-fuchsia-500 via-cyan-500 to-fuchsia-500 "></div>
               </div>
 
               {/* Animated gradient line */}

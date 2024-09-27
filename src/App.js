@@ -9,7 +9,8 @@ import Competition from "./pages/Competition.js";
 import Faqs from "./pages/Faqs.js";
 import ContactUs from "./pages/ContactUs.js";
 import ResHeader from "./components/ResHeader.js";
-import Header from "./components/Header.js";
+import Sectors from "./pages/Sectors.js";
+import Partners from "./pages/Partners.js";
 // import Footer from "./components/Footer";
 
 function App() {
@@ -38,6 +39,8 @@ function App() {
           <Route path="/competition" element={<Competition />} />
           <Route path="/faqs" element={<Faqs />} />
           <Route path="/contactus" element={<ContactUs />} />
+          <Route path="/sectors" element={<Sectors />} />
+          <Route path="/partners" element={<Partners />} />
         </Routes>
         {/* <Footer /> This also remains static */}
       </div>

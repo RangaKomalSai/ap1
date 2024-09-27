@@ -2,6 +2,8 @@
 import React from "react";
 import SectionHeading from "../../components/SectionHeading.js";
 import { Link } from "react-router-dom";
+import ramya from "../../assets/ramya.jpg";
+import  hardik  from "../../assets/hardik.jpg";
 
 function ContactUs() {
   return (
@@ -15,7 +17,14 @@ function ContactUs() {
           <div>
             <div className="box-container mb-12">
               <div className="white-box rounded-2xl"></div>
-              <div className="black-box rounded-2xl"></div>
+              <div className="black-box rounded-2xl object-cover">
+                <img
+                  src={ramya}
+                  alt="Ramya"
+                  className="h-auto rounded-2xl"
+                  draggable="false"
+                />
+              </div>
             </div>
             <h3 className="text-xl font-semibold" data-aos="zoom-in-up">
               Ramya Ranjan Behera
@@ -35,7 +44,14 @@ function ContactUs() {
           <div>
             <div className="box-container mb-12">
               <div className="white-box rounded-2xl"></div>
-              <div className="black-box rounded-2xl"></div>
+              <div className="black-box rounded-2xl">
+                <img
+                  src={hardik}
+                  alt="Hardik"
+                  className="h-auto rounded-2xl"
+                  draggable="false"
+                />
+              </div>
             </div>
             <h3 className="text-xl font-semibold" data-aos="zoom-in-up">
               Hardik Agrawal
