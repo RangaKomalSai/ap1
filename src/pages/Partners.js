@@ -37,7 +37,7 @@ function Partners() {
             className="profile-card h-[150px] w-[150px] md:h-[200px] md:w-[200px]"
             data-aos="fade-up"
           >
-            <Link to="#" rel="noreferrer">
+            <Link to="https://www.linkedin.com/company/anantam-ecosystems/" target="_blank" rel="noreferrer">
               <div className="img-container">
                 <img
                   src={anantam}
@@ -52,7 +52,7 @@ function Partners() {
             className="profile-card h-[150px] w-[150px] md:h-[200px] md:w-[200px]"
             data-aos="fade-up"
           >
-            <Link to="#" rel="noreferrer">
+            <Link to="https://www.atheravp.com/" target="_blank" rel="noreferrer">
               <div className="img-container">
                 <img
                   src={athera}
@@ -67,7 +67,7 @@ function Partners() {
             className="profile-card h-[150px] w-[150px] md:h-[200px] md:w-[200px]"
             data-aos="fade-up"
           >
-            <Link to="#" rel="noreferrer">
+            <Link to="https://www.venturewolf.in/" target="_blank" rel="noreferrer">
               <div className="img-container">
                 <img
                   src={venture_wolf}
@@ -82,7 +82,7 @@ function Partners() {
             className="profile-card h-[150px] w-[150px] md:h-[200px] md:w-[200px]"
             data-aos="fade-up"
           >
-            <Link to="#" rel="noreferrer">
+            <Link to="https://ivycamp.in/" target="_blank" rel="noreferrer">
               <div className="img-container">
                 <img
                   src={ivy}
@@ -97,7 +97,7 @@ function Partners() {
             className="profile-card h-[150px] w-[150px] md:h-[200px] md:w-[200px]"
             data-aos="fade-up"
           >
-            <Link to="#" rel="noreferrer">
+            <Link to="https://ipventures.in/" target="_blank" rel="noreferrer">
               <div className="img-container">
                 <img
                   src={inflection}
