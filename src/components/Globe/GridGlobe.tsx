@@ -393,7 +393,7 @@ const GridGlobe = () => {
 
   return (
     <>
-      <div className="w-full h-[70vh] md:h-screen z-10 ">
+      <div className="w-full h-[70vh] md:h-screen z-10 cursor-grab active:cursor-grabbing">
         <Suspense
           fallback={
             <div className="flex items-center justify-center">

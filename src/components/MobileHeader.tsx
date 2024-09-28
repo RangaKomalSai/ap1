@@ -12,6 +12,7 @@ const MobileHeader = ({ closeNav, showNav }: Props) => {
   const navOpenStyle = showNav ? "translate-x-0" : "translate-x-[-100%]";
   const handleClick = () => {
     closeNav();
+    window.scrollTo(0, 0);
   };
 
   return (

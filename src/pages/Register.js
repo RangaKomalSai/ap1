@@ -3,6 +3,7 @@ import SectionHeading from "../components/SectionHeading.js";
 import Footer from "../components/Footer.js";
 import axios from "axios";
 import toast from "react-hot-toast";
+import { API_URL } from "../utils/apiConfig.js";
 
 function Register() {
   const [formData, setFormData] = useState({
@@ -59,7 +60,7 @@ function Register() {
     setIsLoading(true);
 
     const promise = axios.post(
-      "http://localhost:4002/api/register/register-team",
+      `${API_URL}/api/register/register-team`,
       formData
     );
 

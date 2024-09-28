@@ -4,6 +4,7 @@ import ContactUs from "./HomeSections/ContactUs.js";
 import SectionHeading from "../components/SectionHeading.js";
 import axios from "axios";
 import toast from "react-hot-toast";
+import { API_URL } from "../utils/apiConfig.js";
 
 function ContactUsPage() {
   const [formData, setFormData] = useState({
@@ -39,10 +40,7 @@ function ContactUsPage() {
     }
     setIsLoading(true);
 
-    const promise = axios.post(
-      "http://localhost:4002/api/email/send-email",
-      formData
-    );
+    const promise = axios.post(`${API_URL}/api/email/send-email`, formData);
 
     toast.promise(promise, {
       loading: "Sending...",

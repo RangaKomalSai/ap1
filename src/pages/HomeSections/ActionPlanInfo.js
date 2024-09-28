@@ -216,7 +216,7 @@ function ActionPlanInfo() {
       setHasAnimated(true); // Ensure the animation runs only once
 
       // Counting animation for entries
-      const targetEntries = 2000;
+      const targetEntries = 3000;
       const incrementEntries = targetEntries / 100;
       const countUpEntries = setInterval(() => {
         setEntries((prev) => {

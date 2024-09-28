@@ -25,11 +25,7 @@ function Benefits() {
               data-aos="fade-right"
             />
             <div className="font-semibold font-montserrat flex flex-col justify-center items-start w-[60%]">
-              <div className="flex items-center justify-center space-x-2">
-                <div
-                  className="w-[4%] aspect-square rounded-full bg-gradient-to-b from-[#FFFFFF] to-[#3812E4]"
-                  data-aos="fade-left"
-                ></div>
+              <div className="flex items-center justify-start space-x-2">
                 <h1
                   className=" w-[90%] bg-gradient-to-b from-[#FFFFFF] to-[#3812E4] text-transparent bg-clip-text text-[22px] md:text-[32px]"
                   data-aos="fade-left"
@@ -49,11 +45,7 @@ function Benefits() {
           </div>
           <div className="flex justify-around items-center">
             <div className="font-semibold font-montserrat flex flex-col justify-center items-start w-[60%]">
-              <div className="flex items-center justify-center space-x-2">
-                <div
-                  className="w-[4%] aspect-square rounded-full bg-gradient-to-b from-[#FFFFFF] to-[#3812E4]"
-                  data-aos="fade-right"
-                ></div>
+              <div className="flex items-center justify-start space-x-2">
                 <h1
                   className="w-[90%] bg-gradient-to-b from-[#FFFFFF] to-[#3812E4] text-transparent bg-clip-text text-[22px] md:text-[32px]"
                   data-aos="fade-right"
@@ -87,11 +79,7 @@ function Benefits() {
               data-aos="fade-right"
             />
             <div className="font-semibold font-montserrat flex flex-col justify-center items-start w-[60%]">
-              <div className="flex items-center justify-center space-x-2">
-                <div
-                  className="w-[4%] aspect-square rounded-full bg-gradient-to-b from-[#FFFFFF] to-[#3812E4]"
-                  data-aos="fade-left"
-                ></div>
+              <div className="flex items-center justify-start space-x-2">
                 <h1
                   className="w-[90%] bg-gradient-to-b from-[#FFFFFF] to-[#3812E4] text-transparent bg-clip-text text-[22px] md:text-[32px]"
                   data-aos="fade-left"
@@ -111,11 +99,7 @@ function Benefits() {
           </div>
           <div className="flex justify-around items-center">
             <div className="font-semibold font-montserrat flex flex-col justify-center items-start w-[60%]">
-              <div className="flex items-center justify-center space-x-2">
-                <div
-                  className="w-[4%] aspect-square rounded-full bg-gradient-to-b from-[#FFFFFF] to-[#3812E4]"
-                  data-aos="fade-right"
-                ></div>
+              <div className="flex items-center justify-start space-x-2">
                 <h1
                   className="w-[90%] bg-gradient-to-b from-[#FFFFFF] to-[#3812E4] text-transparent bg-clip-text text-[22px] md:text-[32px]"
                   data-aos="fade-right"

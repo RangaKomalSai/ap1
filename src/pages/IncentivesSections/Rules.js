@@ -3,7 +3,7 @@ import SectionHeading from "../../components/SectionHeading.js";
 
 function Rules() {
   return (
-    <div>
+    <div className="font-montserrat">
       <SectionHeading
         back_heading="RULES"
         main_heading="Rules and Regulations"
@@ -65,6 +65,47 @@ function Rules() {
             you only have an idea that can solve a social problem then don't
             register for this track and register for the 'Social Innovation
             Track'
+          </li>
+        </ol>
+      </div>
+      <div className="w-[80%] mx-auto border-white rounded-xl border-4 p-4 mt-8">
+        <h2 className="text-center text-3xl mb-8 mt-4">
+          Social Innovation Track
+        </h2>
+        <ol className="list-decimal list-outside w-[98%] pl-12">
+        <li className="mb-4">
+            This track focuses on building a plan or an idea to solve critical
+            social problems in an innovative as well as transformational manner.
+          </li>
+          <li className="mb-4">
+          Registered Startups are not allowed to participate in the 'Social Innovation Track'.
+          </li>
+          <li className="mb-4">
+          Teams has to submit an abstract giving a detailed description of their idea/plan along with any prototype they have developed (if any)
+
+          </li>
+          <li className="mb-4">
+          There is no age restriction on any individual to participate. Anyone, from students to working professionals across the nation, can participate.
+
+          </li>
+          <li className="mb-4">
+          Teams can have a maximum of 4 members including the Team leader. More than 4 is not allowed.
+
+          </li>
+          <li className="mb-4">
+          The Team leader will be the point of contact and his/her email address will be used for future correspondence.
+
+          </li>
+          <li className="mb-4">
+          The team must abide by timely instructions, guidelines and ethics provided by Abhyuday with general business ethics.
+
+          </li>
+          <li className="mb-4">
+          Only the team leader has to register on the portal. He/She can later add his/her team members in the Questionnaire Submission form.
+
+          </li>
+          <li className="mb-4">
+          You can participate in more than 1 track with different business ideas. One idea has to be registered in only one track. If you have a startup register for the 'Social Entrepreneurship Track' and if you only have an idea that can solve a social problem then don't register for this track and register for the 'Social Innovation Track'.
           </li>
         </ol>
       </div>

@@ -26,14 +26,14 @@ function Competition() {
           <div className="md:hidden bg-gradient-to-tr from-[#ffffff] to-[#2635BA] text-[#311B92] text-center font-extrabold px-2 py-2 rounded-lg w-[200px] h-[90px] mb-6 mx-auto">
             Social <br /> Entrepreneurship <br /> Track
           </div>
-          <div class="grid md:grid-cols-5 grid-cols-[1fr_1.5fr] gap-2 mx-4 md:grid-rows-[1fr_100px] items-center justify-items-center">
-            <div class="hidden md:block md:order-1 order-1"></div>
-            <div class="hidden md:block order-2 md:order-6">
+          <div className="grid md:grid-cols-5 grid-cols-[1fr_1.5fr] gap-2 mx-4 md:grid-rows-[1fr_100px] items-center justify-items-center">
+            <div className="hidden md:block md:order-1 order-1"></div>
+            <div className="hidden md:block order-2 md:order-6">
               <div className=" bg-gradient-to-tr from-[#ffffff] to-[#2635BA] text-[#311B92] text-center font-extrabold px-2 py-2 rounded-lg md:w-[200px] md:h-[90px] mb-2">
                 Social <br /> Entrepreneurship <br /> Track
               </div>
             </div>
-            <div class="order-3 md:order-2">
+            <div className="order-3 md:order-2">
               <img
                 src={s1}
                 alt="Logo"
@@ -42,7 +42,7 @@ function Competition() {
                 data-aos="fade-right"
               />
             </div>
-            <div class="order-5 md:order-3">
+            <div className="order-5 md:order-3">
               <img
                 src={s2}
                 alt="Logo"
@@ -51,7 +51,7 @@ function Competition() {
                 data-aos="fade-down"
               />
             </div>
-            <div class="order-7 md:order-4">
+            <div className="order-7 md:order-4">
               <img
                 src={s3}
                 alt="Logo"
@@ -60,7 +60,7 @@ function Competition() {
                 data-aos="fade-up"
               />
             </div>
-            <div class="order-9 md:order-5">
+            <div className="order-9 md:order-5">
               <img
                 src={s4}
                 alt="Logo"
@@ -69,20 +69,20 @@ function Competition() {
                 data-aos="fade-left"
               />
             </div>
-            <div class="order-4 md:order-7">
+            <div className="order-4 md:order-7">
               <h2 className="text-center font-bold">
                 Questionnaire submission
               </h2>
             </div>
-            <div class="order-6 md:order-8">
+            <div className="order-6 md:order-8">
               <h2 className="text-center font-bold">
                 Mentor Allotment & Advanced Workshops
               </h2>
             </div>
-            <div class="order-8 md:order-9">
+            <div className="order-8 md:order-9">
               <h2 className="text-center font-bold">Video Pitch Submission</h2>
             </div>
-            <div class="order-10 md:order-10">
+            <div className="order-10 md:order-10">
               <h2 className="text-center font-bold">
                 Offline Pitching at IIT Bombay
               </h2>
@@ -98,7 +98,7 @@ function Competition() {
                 Social <br /> Innovation <br /> Track
               </div>
             </div>
-            <div class="md:hidden order-1">
+            <div className="md:hidden order-1">
               <img
                 src={s1}
                 alt="Logo"
@@ -107,7 +107,7 @@ function Competition() {
                 data-aos="fade-right"
               />
             </div>
-            <div class="md:hidden order-3">
+            <div className="md:hidden order-3">
               <img
                 src={s2}
                 alt="Logo"
@@ -116,7 +116,7 @@ function Competition() {
                 data-aos="fade-down"
               />
             </div>
-            <div class="md:hidden order-5">
+            <div className="md:hidden order-5">
               <img
                 src={s3}
                 alt="Logo"
@@ -125,7 +125,7 @@ function Competition() {
                 data-aos="fade-up"
               />
             </div>
-            <div class="md:hidden order-7 font-bold">
+            <div className="md:hidden order-7 font-bold">
               <img
                 src={s4}
                 alt="Logo"
@@ -137,17 +137,17 @@ function Competition() {
             <div className="md:order-2 order-2">
               <h2 className="text-center font-bold">Abstract submission</h2>
             </div>
-            <div class="md:order-3 order-4">
+            <div className="md:order-3 order-4">
               <h2 className="text-center font-bold">
                 Mentor Allotment & Advanced Workshops
               </h2>
             </div>
-            <div class="md:order-4 order-6">
+            <div className="md:order-4 order-6">
               <h2 className="text-center font-bold">
                 Progress Video Submission
               </h2>
             </div>
-            <div class="md:order-5 order-8">
+            <div className="md:order-5 order-8">
               <h2 className="text-center font-bold">
                 Offline Idea Presentation at IIT Bombay
               </h2>
@@ -240,24 +240,24 @@ function Competition() {
 
               <div className="hidden md:block md:col-start-1 md:row-start-1"></div>
               <div className="col-start-2 row-start-2 md:col-start-2 md:row-start-1 md:self-end self-start md:mt-2 mb-4 md:mb-0">
-                <p className="text-white mt-2 text-start font-extrabold text-sm ">
+                <div className="text-white mt-2 text-start font-extrabold text-sm ">
                   <p className="border-b-2 mb-2 pb-2">
                     Workshops
                     <br />
                   </p>
                   30 Sept - 21 Oct
-                </p>
+                </div>
               </div>
               <div className="hidden md:block col-start-2 row-start-4 md:col-start-3 md:row-start-1"></div>
               <div className="col-start-1 row-start-4 md:col-start-4 md:row-start-1 md:self-end md:mb-2 self-start md:mt-2 mb-4">
-                <p className="text-white mt-2 text-start font-extrabold text-sm w-[70%] mx-auto ">
+                <div className="text-white mt-2 text-start font-extrabold text-sm w-[70%] mx-auto ">
                   <p className="border-b-2 mb-2 pb-2">
                     Round 1 <br />
                     Submission Deadline
                     <br />
                   </p>
                   4 Nov
-                </p>
+                </div>
               </div>
               <div className="col-start-1 row-start-1 md:col-start-1 md:row-start-2 relative z-10">
                 <div className="bg-white rounded-md font-bold text-[64px] p-2 h-[110px] w-[110px] text-center incen-cont">
@@ -280,45 +280,45 @@ function Competition() {
                 </div>
               </div>
               <div className="col-start-1 row-start-2 md:col-start-1 md:row-start-3 self-start md:mt-2 mb-4 md:mb-0">
-                <p className="text-white mt-2 text-start font-extrabold text-sm w-[60%] mx-auto">
+                <div className="text-white mt-2 text-start font-extrabold text-sm w-[60%] mx-auto">
                   <p className="border-b-2 mb-2 pb-2 w-[90%]">
                     Registrations start &
                     <br />
                     Questionnaire Submission
                   </p>
                   28 Sept
-                </p>
+                </div>
               </div>
               <div className="hidden md:block col-start-1 row-start-6 md:col-start-2 md:row-start-3"></div>
               <div className="col-start-2 row-start-4 md:col-start-3 md:row-start-3 mt-2 self-start md:mt-2 mb-4 md:mb-0">
-                <p className="text-white mt-2 text-start font-extrabold text-sm w-[70%] mx-auto">
+                <div className="text-white mt-2 text-start font-extrabold text-sm w-[70%] mx-auto">
                   <p className="border-b-2 mb-2 pb-2">
                     Registration Deadline
                     <br />
                   </p>
-                  20 Oct
-                </p>
+                  27 Oct
+                </div>
               </div>
               <div className="hidden md:block col-start-2 row-start-[10]  md:col-start-4 md:row-start-3"></div>
               <div className="col-start-1 row-start-[8]  md:col-start-1 md:row-start-4 md:self-end mb-2 self-start">
-                <p className="text-white mt-2 text-start font-extrabold text-sm w-[70%] mx-auto">
+                <div className="text-white mt-2 text-start font-extrabold text-sm w-[70%] mx-auto">
                   <p className="border-b-2 mb-2 pb-2">
                     Round 2
                     <br />
                     Submission Deadline
                   </p>
                   24 Dec
-                </p>
+                </div>
               </div>
               <div className="hidden md:block col-start-1 row-start-7 md:col-start-2 md:row-start-4"></div>
               <div className="col-start-2 row-start-6 md:col-start-3 md:row-start-4 md:self-end mb-2 self-start">
-                <p className="text-white mt-2 text-start font-extrabold text-sm w-[85%] mx-auto">
+                <div className="text-white mt-2 text-start font-extrabold text-sm w-[85%] mx-auto">
                   <p className="border-b-2 mb-2 pb-2 self-start mt-2">
                     Mentor Allotment
                     <br />
                   </p>
                   15 Nov
-                </p>
+                </div>
               </div>
               <div className="hidden md:block col-start-2 row-start-3 md:col-start-4 md:row-start-4"></div>
               <div className="col-start-1 row-start-[7] md:col-start-1 md:row-start-5 relative z-10">
@@ -343,38 +343,38 @@ function Competition() {
               </div>
               <div className="hidden md:block col-start-1 row-start-[12] md:col-start-1 md:row-start-6"></div>
               <div className="col-start-2 row-start-[8] md:col-start-2 md:row-start-6 self-start md:mt-2">
-                <p className="text-white mt-2 text-start font-extrabold text-sm w-[70%] mx-auto">
+                <div className="text-white mt-2 text-start font-extrabold text-sm w-[70%] mx-auto">
                   <p className="border-b-2 mb-2 pb-2">Advanced Workshop</p>
                   15 Nov - 20 Dec
-                </p>
+                </div>
               </div>
               <div className="hidden md:block col-start-2 row-start-9 md:col-start-3 md:row-start-6"></div>
               <div className="col-start-1 row-start-6 md:col-start-4 md:row-start-6 self-start md:mt-2">
-                <p className="text-white mt-2 text-start font-extrabold text-sm w-[90%] mx-auto">
+                <div className="text-white mt-2 text-start font-extrabold text-sm w-[90%] mx-auto">
                   <p className="border-b-2 mb-2 pb-2 ">
                     Round 1 Results
                     <br />
                   </p>
                   11 Nov
-                </p>
+                </div>
               </div>
               <div className="hidden md:block col-start-2 row-start-[15] md:col-start-1 md:row-start-7"></div>
               <div className="col-start-1 row-start-[10] md:col-start-2 md:row-start-7 md:self-end mb-2 self-start">
-                <p className="text-white mt-2 text-start font-extrabold text-sm w-[90%] mx-auto">
+                <div className="text-white mt-2 text-start font-extrabold text-sm w-[90%] mx-auto">
                   <p className="border-b-2 mb-2 pb-2">Round 2 Results</p>
                   31 Dec
-                </p>
+                </div>
               </div>
               <div className="hidden md:block col-start-1 row-start-[18] md:col-start-3 md:row-start-7"></div>
               <div className="col-start-2 row-start-[12] md:col-start-4 md:row-start-7 md:self-end mb-2 self-start">
-                <p className="text-white mt-2 text-start font-extrabold text-sm w-[60%] mx-auto">
+                <div className="text-white mt-2 text-start font-extrabold text-sm w-[60%] mx-auto">
                   <p className="border-b-2 mb-2 pb-2">
                     Final Closed Room
                     <br />
                     Pitching ( Social Fest)
                   </p>
                   Jan 2024
-                </p>
+                </div>
               </div>
               <div className="col-start-1 row-start-[9] md:col-start-1 md:row-start-8 relative z-10">
                 <div className="bg-white rounded-md font-bold text-[64px] p-2 h-[110px] w-[110px] text-center incen-cont">
@@ -397,24 +397,24 @@ function Competition() {
                 </div>
               </div>
               <div className="col-start-2 row-start-[10] md:col-start-1 md:row-start-9 self-start mt-2">
-                <p className="text-white mt-2 text-start font-extrabold text-sm ">
+                <div className="text-white mt-2 text-start font-extrabold text-sm ">
                   <p className="border-b-2 mb-2 pb-2">
                     Final Round
                     <br />
                     Submission
                   </p>
                   15 Jan
-                </p>
+                </div>
               </div>
               <div className="hidden md:block col-start-2 row-start-[16] md:col-start-2 md:row-start-9"></div>
               <div className="col-start-1 row-start-[12] md:col-start-3 md:row-start-9 self-start md:mt-2">
-                <p className="text-white mt-2 text-start font-extrabold text-sm ">
+                <div className="text-white mt-2 text-start font-extrabold text-sm ">
                   <p className="border-b-2 mb-2 pb-2">
                     Results
                     <br />
                   </p>
                   Feb 2024
-                </p>
+                </div>
               </div>
               <div className="hidden md:block col-start-1 row-start-[13] md:col-start-4 md:row-start-9"></div>
             </div>

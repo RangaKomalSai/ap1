@@ -11,6 +11,8 @@ import ContactUs from "./pages/ContactUs.js";
 import ResHeader from "./components/ResHeader.js";
 import Sectors from "./pages/Sectors.js";
 import Partners from "./pages/Partners.js";
+import Incentives from "./pages/Incentives.js";
+import Page404 from "./pages/Page404.js";
 // import Footer from "./components/Footer";
 
 function App() {
@@ -41,6 +43,8 @@ function App() {
           <Route path="/contactus" element={<ContactUs />} />
           <Route path="/sectors" element={<Sectors />} />
           <Route path="/partners" element={<Partners />} />
+          <Route path="/incentives" element={<Incentives />} />
+          <Route path="*" element={<Page404 />} />
         </Routes>
         {/* <Footer /> This also remains static */}
       </div>
