@@ -64,8 +64,6 @@ interface WorldProps {
   data: Position[];
 }
 
-let numbersOfRings = [0];
-
 const GlobeComponent = ({ globeConfig, data }: WorldProps) => {
   const [globeData, setGlobeData] = useState<
     | {

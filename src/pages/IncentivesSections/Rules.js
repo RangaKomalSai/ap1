@@ -19,7 +19,7 @@ function Rules() {
           </li>
           <li className="mb-4">
             Any startup incorporated before 4 years of the conclusion of the
-            competition i.e before January 2018 will not be allowed to
+            competition i.e before January 2020 will not be allowed to
             participate.
           </li>
           <li className="mb-4">

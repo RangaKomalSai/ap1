@@ -21,6 +21,9 @@ import zexpr from "../assets/partners/zex.png";
 import startupnews from "../assets/partners/startupnews.png";
 import lawctopus from "../assets/partners/lawctopus.svg";
 import know from "../assets/partners/know.jpg";
+import bizzbucket from "../assets/partners/bizzbucket.jpg";
+import indiaeducation from "../assets/partners/indiaeducation.png";
+import amarujala from "../assets/partners/amarujala.png";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import "./IncentivesSections/sections.css";
@@ -37,7 +40,11 @@ function Partners() {
             className="profile-card h-[150px] w-[150px] md:h-[200px] md:w-[200px]"
             data-aos="fade-up"
           >
-            <Link to="https://www.linkedin.com/company/anantam-ecosystems/" target="_blank" rel="noreferrer">
+            <Link
+              to="https://www.linkedin.com/company/anantam-ecosystems/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <div className="img-container">
                 <img
                   src={anantam}
@@ -52,7 +59,11 @@ function Partners() {
             className="profile-card h-[150px] w-[150px] md:h-[200px] md:w-[200px]"
             data-aos="fade-up"
           >
-            <Link to="https://www.atheravp.com/" target="_blank" rel="noreferrer">
+            <Link
+              to="https://www.atheravp.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <div className="img-container">
                 <img
                   src={athera}
@@ -67,7 +78,11 @@ function Partners() {
             className="profile-card h-[150px] w-[150px] md:h-[200px] md:w-[200px]"
             data-aos="fade-up"
           >
-            <Link to="https://www.venturewolf.in/" target="_blank" rel="noreferrer">
+            <Link
+              to="https://www.venturewolf.in/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <div className="img-container">
                 <img
                   src={venture_wolf}
@@ -269,9 +284,24 @@ function Partners() {
           </div>
         </div>
         <h1 className="font-extrabold text-[32px] text-[#5ED2FF] pt-16 w-[80%] mx-auto">
-          MEDIA PARTNERS
+          MEDIA & OUTREACH PARTNERS
         </h1>
         <div className="xl:w-[80%] w-[90%] mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 gap-y-8 justify-items-center items-center mt-8">
+          <div
+            className="profile-card h-[150px] w-[150px] md:h-[200px] md:w-[200px]"
+            data-aos="fade-up"
+          >
+            <Link to="#" rel="noreferrer">
+              <div className="img-container">
+                <img
+                  src={bizzbucket}
+                  alt="Bizz Bucket logo"
+                  className=""
+                  draggable="false"
+                />
+              </div>
+            </Link>
+          </div>
           <div
             className="profile-card h-[150px] w-[150px] md:h-[200px] md:w-[200px]"
             data-aos="fade-up"
@@ -324,6 +354,21 @@ function Partners() {
             <Link to="#" rel="noreferrer">
               <div className="img-container">
                 <img
+                  src={indiaeducation}
+                  alt="Indian Education Diary logo"
+                  className=""
+                  draggable="false"
+                />
+              </div>
+            </Link>
+          </div>
+          <div
+            className="profile-card h-[150px] w-[150px] md:h-[200px] md:w-[200px]"
+            data-aos="fade-up"
+          >
+            <Link to="#" rel="noreferrer">
+              <div className="img-container">
+                <img
                   src={startupnews}
                   alt="Startup news logo"
                   className=""
@@ -356,6 +401,21 @@ function Partners() {
                 <img
                   src={know}
                   alt="Know a fest logo"
+                  className=""
+                  draggable="false"
+                />
+              </div>
+            </Link>
+          </div>
+          <div
+            className="profile-card h-[150px] w-[150px] md:h-[200px] md:w-[200px]"
+            data-aos="fade-up"
+          >
+            <Link to="#" rel="noreferrer">
+              <div className="img-container">
+                <img
+                  src={amarujala}
+                  alt="Amar Ujala logo"
                   className=""
                   draggable="false"
                 />

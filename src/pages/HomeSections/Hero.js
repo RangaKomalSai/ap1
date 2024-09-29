@@ -7,12 +7,12 @@ function Hero() {
   return (
     <section className="action-plan-info bg-primary text-white py-16 font-montserrat pt-[20vh] md:overflow-hidden">
       <div className="container mx-auto text-center relative">
-      <div className="absolute inset-0 z-0 md:hidden opacity-80">
-           <GridGlobe />
-         </div>
-         <div className="hidden md:block absolute -top-36 z-0 md:-right-28 lg:-right-20 w-[80%] lg:w-[60%]">
-           <GridGlobe />
-         </div>
+        <div className="absolute -top-36 inset-0 z-0 md:hidden opacity-80">
+          <GridGlobe />
+        </div>
+        <div className="hidden md:block absolute -top-36 z-0 md:-right-28 lg:-right-20 w-[80%] lg:w-[60%]">
+          <GridGlobe />
+        </div>
         <div
           className="flex flex-col justify-start items-center md:items-end w-full md:w-[60%] min-h-[40vh] md:h-[70vh]"
           id="top"

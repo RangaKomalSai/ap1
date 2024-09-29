@@ -25,7 +25,7 @@ function Header({ openNav }) {
               className="w-36 md:w-44 lg:w-32 xl:w-48"
             />
           </Link>
-          <ul className="lg:flex hidden justify-end space-x-10 text-nowrap md:text-xs lg:text-base xl:text-lg">
+          <ul className="lg:flex hidden justify-end items-center space-x-10 text-nowrap md:text-xs lg:text-base xl:text-lg">
             <li>
               <Link
                 to="/"
@@ -90,6 +90,17 @@ function Header({ openNav }) {
               >
                 FAQs
               </Link>
+            </li>
+            <li>
+              <div className="flex justify-center md:justify-end items-center w-full">
+                <Link to="/register">
+                  <button
+                    className="bg-[#41BDEE] hover:bg-blue-600 text-white font-extrabold py-1 px-2 rounded-md text-lg"
+                  >
+                    REGISTER
+                  </button>
+                </Link>
+              </div>
             </li>
           </ul>
           <FontAwesomeIcon

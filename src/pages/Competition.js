@@ -23,13 +23,13 @@ function Competition() {
     <section className="action-plan-info bg-primary text-white py-16 font-montserrat overflow-hidden pt-[20vh]">
       <div className="container mx-auto">
         <div className="mb-32">
-          <div className="md:hidden bg-gradient-to-tr from-[#ffffff] to-[#2635BA] text-[#311B92] text-center font-extrabold px-2 py-2 rounded-lg w-[200px] h-[90px] mb-6 mx-auto">
+          <div className="md:hidden bg-gradient-to-t from-[#059FBD] to-[#180D49] text-[#ffffff] text-center font-extrabold px-2 py-2 rounded-lg w-[200px] h-[90px] mb-6 mx-auto">
             Social <br /> Entrepreneurship <br /> Track
           </div>
           <div className="grid md:grid-cols-5 grid-cols-[1fr_1.5fr] gap-2 mx-4 md:grid-rows-[1fr_100px] items-center justify-items-center">
             <div className="hidden md:block md:order-1 order-1"></div>
             <div className="hidden md:block order-2 md:order-6">
-              <div className=" bg-gradient-to-tr from-[#ffffff] to-[#2635BA] text-[#311B92] text-center font-extrabold px-2 py-2 rounded-lg md:w-[200px] md:h-[90px] mb-2">
+              <div className="bg-gradient-to-t from-[#059FBD] to-[#180D49] text-[#ffffff] text-center font-extrabold px-2 py-2 rounded-lg md:w-[200px] md:h-[90px] mb-2">
                 Social <br /> Entrepreneurship <br /> Track
               </div>
             </div>
@@ -89,12 +89,12 @@ function Competition() {
             </div>
           </div>
           <div className="hidden md:block border-gradient border-gradient-purple h-3 rounded-3xl"></div>
-          <div className="md:hidden bg-gradient-to-tr from-[#ffffff] to-[#2635BA] text-[#311B92] text-center font-extrabold px-2 py-2 rounded-lg w-[200px] h-[90px] mb-6 mx-auto mt-8">
+          <div className="md:hidden bg-gradient-to-t from-[#059FBD] to-[#180D49] text-[#ffffff] text-center font-extrabold px-2 py-2 rounded-lg w-[200px] h-[90px] mb-6 mx-auto mt-8">
             Social <br /> Innovation <br /> Track
           </div>
           <div className="grid items-center justify-items-center grid-cols-[1fr_1.5fr] gap-2 mx-4 md:grid-rows-[1fr_100px] md:grid-cols-5 mb-12">
             <div className="hidden md:block md:order-1">
-              <div className="bg-gradient-to-tr from-[#ffffff] to-[#2635BA] text-[#311B92] text-center font-extrabold px-2 py-2 rounded-lg w-[200px] h-[90px] mt-2">
+              <div className="bg-gradient-to-t from-[#059FBD] to-[#180D49] text-[#ffffff] text-center font-extrabold px-2 py-2 rounded-lg w-[200px] h-[90px] mt-2">
                 Social <br /> Innovation <br /> Track
               </div>
             </div>
@@ -239,7 +239,7 @@ function Competition() {
               </div>
 
               <div className="hidden md:block md:col-start-1 md:row-start-1"></div>
-              <div className="col-start-2 row-start-2 md:col-start-2 md:row-start-1 md:self-end self-start md:mt-2 mb-4 md:mb-0">
+              <div className="col-start-2 row-start-2 md:col-start-2 md:row-start-3 self-start md:mt-2 mb-4 md:mb-0">
                 <div className="text-white mt-2 text-start font-extrabold text-sm ">
                   <p className="border-b-2 mb-2 pb-2">
                     Workshops
@@ -249,7 +249,7 @@ function Competition() {
                 </div>
               </div>
               <div className="hidden md:block col-start-2 row-start-4 md:col-start-3 md:row-start-1"></div>
-              <div className="col-start-1 row-start-4 md:col-start-4 md:row-start-1 md:self-end md:mb-2 self-start md:mt-2 mb-4">
+              <div className="col-start-1 row-start-4 md:col-start-4 md:row-start-3 md:mb-2 self-start mb-4">
                 <div className="text-white mt-2 text-start font-extrabold text-sm w-[70%] mx-auto ">
                   <p className="border-b-2 mb-2 pb-2">
                     Round 1 <br />
@@ -289,7 +289,7 @@ function Competition() {
                   28 Sept
                 </div>
               </div>
-              <div className="hidden md:block col-start-1 row-start-6 md:col-start-2 md:row-start-3"></div>
+              <div className="hidden md:block col-start-1 row-start-6 md:col-start-2 md:row-start-1"></div>
               <div className="col-start-2 row-start-4 md:col-start-3 md:row-start-3 mt-2 self-start md:mt-2 mb-4 md:mb-0">
                 <div className="text-white mt-2 text-start font-extrabold text-sm w-[70%] mx-auto">
                   <p className="border-b-2 mb-2 pb-2">
@@ -299,8 +299,8 @@ function Competition() {
                   27 Oct
                 </div>
               </div>
-              <div className="hidden md:block col-start-2 row-start-[10]  md:col-start-4 md:row-start-3"></div>
-              <div className="col-start-1 row-start-[8]  md:col-start-1 md:row-start-4 md:self-end mb-2 self-start">
+              <div className="hidden md:block col-start-2 row-start-[10]  md:col-start-4 md:row-start-1"></div>
+              <div className="col-start-1 row-start-[8]  md:col-start-1 md:row-start-6 self-start">
                 <div className="text-white mt-2 text-start font-extrabold text-sm w-[70%] mx-auto">
                   <p className="border-b-2 mb-2 pb-2">
                     Round 2
@@ -311,7 +311,7 @@ function Competition() {
                 </div>
               </div>
               <div className="hidden md:block col-start-1 row-start-7 md:col-start-2 md:row-start-4"></div>
-              <div className="col-start-2 row-start-6 md:col-start-3 md:row-start-4 md:self-end mb-2 self-start">
+              <div className="col-start-2 row-start-6 md:col-start-3 md:row-start-6 self-start">
                 <div className="text-white mt-2 text-start font-extrabold text-sm w-[85%] mx-auto">
                   <p className="border-b-2 mb-2 pb-2 self-start mt-2">
                     Mentor Allotment
@@ -341,15 +341,15 @@ function Competition() {
                   <p className="incen-number">05</p>
                 </div>
               </div>
-              <div className="hidden md:block col-start-1 row-start-[12] md:col-start-1 md:row-start-6"></div>
-              <div className="col-start-2 row-start-[8] md:col-start-2 md:row-start-6 self-start md:mt-2">
+              <div className="hidden md:block col-start-1 row-start-[12] md:col-start-1 md:row-start-4"></div>
+              <div className="col-start-2 row-start-[8] md:col-start-2 md:row-start-6 self-start ">
                 <div className="text-white mt-2 text-start font-extrabold text-sm w-[70%] mx-auto">
                   <p className="border-b-2 mb-2 pb-2">Advanced Workshop</p>
                   15 Nov - 20 Dec
                 </div>
               </div>
-              <div className="hidden md:block col-start-2 row-start-9 md:col-start-3 md:row-start-6"></div>
-              <div className="col-start-1 row-start-6 md:col-start-4 md:row-start-6 self-start md:mt-2">
+              <div className="hidden md:block col-start-2 row-start-9 md:col-start-3 md:row-start-4"></div>
+              <div className="col-start-1 row-start-6 md:col-start-4 md:row-start-6 self-start">
                 <div className="text-white mt-2 text-start font-extrabold text-sm w-[90%] mx-auto">
                   <p className="border-b-2 mb-2 pb-2 ">
                     Round 1 Results
@@ -359,21 +359,21 @@ function Competition() {
                 </div>
               </div>
               <div className="hidden md:block col-start-2 row-start-[15] md:col-start-1 md:row-start-7"></div>
-              <div className="col-start-1 row-start-[10] md:col-start-2 md:row-start-7 md:self-end mb-2 self-start">
+              <div className="col-start-1 row-start-[10] md:col-start-2 md:row-start-9 mb-2 self-start">
                 <div className="text-white mt-2 text-start font-extrabold text-sm w-[90%] mx-auto">
                   <p className="border-b-2 mb-2 pb-2">Round 2 Results</p>
                   31 Dec
                 </div>
               </div>
               <div className="hidden md:block col-start-1 row-start-[18] md:col-start-3 md:row-start-7"></div>
-              <div className="col-start-2 row-start-[12] md:col-start-4 md:row-start-7 md:self-end mb-2 self-start">
+              <div className="col-start-2 row-start-[12] md:col-start-3 md:row-start-9 mb-2 self-start">
                 <div className="text-white mt-2 text-start font-extrabold text-sm w-[60%] mx-auto">
                   <p className="border-b-2 mb-2 pb-2">
                     Final Closed Room
                     <br />
                     Pitching ( Social Fest)
                   </p>
-                  Jan 2024
+                  Jan 2025
                 </div>
               </div>
               <div className="col-start-1 row-start-[9] md:col-start-1 md:row-start-8 relative z-10">
@@ -396,7 +396,7 @@ function Competition() {
                   <p className="incen-number">12</p>
                 </div>
               </div>
-              <div className="col-start-2 row-start-[10] md:col-start-1 md:row-start-9 self-start mt-2">
+              <div className="col-start-2 row-start-[10] md:col-start-1 md:row-start-9 self-start">
                 <div className="text-white mt-2 text-start font-extrabold text-sm ">
                   <p className="border-b-2 mb-2 pb-2">
                     Final Round
@@ -406,17 +406,17 @@ function Competition() {
                   15 Jan
                 </div>
               </div>
-              <div className="hidden md:block col-start-2 row-start-[16] md:col-start-2 md:row-start-9"></div>
-              <div className="col-start-1 row-start-[12] md:col-start-3 md:row-start-9 self-start md:mt-2">
+              <div className="hidden md:block col-start-2 row-start-[16] md:col-start-2 md:row-start-7"></div>
+              <div className="col-start-1 row-start-[12] md:col-start-4 md:row-start-9 self-start">
                 <div className="text-white mt-2 text-start font-extrabold text-sm ">
                   <p className="border-b-2 mb-2 pb-2">
                     Results
                     <br />
                   </p>
-                  Feb 2024
+                  Feb 2025
                 </div>
               </div>
-              <div className="hidden md:block col-start-1 row-start-[13] md:col-start-4 md:row-start-9"></div>
+              <div className="hidden md:block col-start-1 row-start-[13] md:col-start-4 md:row-start-7"></div>
             </div>
           </div>
         </div>

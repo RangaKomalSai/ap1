@@ -22,7 +22,7 @@ const MobileHeader = ({ closeNav, showNav }: Props) => {
       ></div>
 
       <ul
-        className={`text-white ${navOpenStyle} top-0 fixed flex items-center justify-center flex-col h-screen transform transition-all duration-300 delay-300 font-montserrat w-4/5 md:w-[60%] bg-primary space-y-14 z-[1009] text-md md:text-2xl`}
+        className={`text-white ${navOpenStyle} top-0 fixed flex justify-center flex-col items-center h-screen transform transition-all duration-300 delay-300 font-montserrat w-4/5 md:w-[60%] bg-primary space-y-14 z-[1009] text-md md:text-2xl`}
       >
         <li>
           <Link to="/" onClick={handleClick}>
@@ -58,6 +58,15 @@ const MobileHeader = ({ closeNav, showNav }: Props) => {
           <Link to="/faqs" onClick={handleClick}>
             FAQs
           </Link>
+        </li>
+        <li>
+          <div className="flex justify-center md:justify-end items-center w-full">
+            <Link to="/register">
+              <button className="bg-[#41BDEE] hover:bg-blue-600 text-white font-extrabold py-1 px-2 rounded-md text-lg" onClick={handleClick}>
+                REGISTER
+              </button>
+            </Link>
+          </div>
         </li>
 
         <FontAwesomeIcon

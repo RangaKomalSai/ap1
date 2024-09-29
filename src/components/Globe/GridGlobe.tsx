@@ -1,5 +1,4 @@
 import React, { Suspense, lazy } from "react";
-import { motion } from "framer-motion";
 
 const World = lazy(() => import("./Globe.tsx")); // Lazy load the Globe component
 
@@ -426,12 +425,6 @@ const GridGlobe = () => {
         `}
       </style>
     </>
-    // <div className="w-full h-full">
-    //   <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-96 px-4">
-    //     <div className="absolute w-full bottom-0 inset-x-0 h-40 pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
-
-    //   </div>
-    // </div>
   );
 };
 

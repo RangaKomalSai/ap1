@@ -134,7 +134,7 @@
 //               </Link>
 //             </div>
 //           </div>
-//           {/* 
+//           {/*
 //           <div className="hidden md:block w-full md:w-[50%] mt-2 md:mt-0">
 //             <GridGlobe />
 //           </div> */}
@@ -201,7 +201,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./sections.css";
 import SectionHeading from "../../components/SectionHeading.js";
-
 
 function ActionPlanInfo() {
   const [entries, setEntries] = useState(0);
@@ -300,7 +299,7 @@ function ActionPlanInfo() {
               Abhyuday, IIT Bombay, empowers young minds to tackle grass root
               level problems and design a sustainable business model for them.
               Teams progress through transformative stages, from ideation to
-              execution, guided by industry experts and investors. Since 2013,
+              execution, guided by industry experts and investors. Since 2012,
               Action Plan has driven growth and is poised to become Asia's
               premier Social Entrepreneurship Platform.
             </p>
