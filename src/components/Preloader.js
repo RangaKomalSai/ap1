@@ -14,7 +14,10 @@ const Preloader = () => {
   };
 
   return (
-    <div className="flex items-center justify-center h-screen" style={{ pointerEvents: 'none' }}>
+    <div
+      className="flex items-center justify-center h-screen"
+      style={{ pointerEvents: "none" }}
+    >
       <Lottie options={defaultOptions} height={400} width={400} />
     </div>
   );

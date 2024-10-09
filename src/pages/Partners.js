@@ -1,5 +1,6 @@
 import React from "react";
 import nostop from "../assets/partners/nostop.png";
+import sine from "../assets/partners/sine.jpeg";
 import aic from "../assets/partners/aic.png";
 import threei from "../assets/partners/3i.png";
 import tbi from "../assets/partners/tbi.png";
@@ -33,9 +34,45 @@ function Partners() {
     <section className="bg-primary text-white py-16 font-montserrat pt-[20vh] text-center">
       <div className="pb-16">
         <h1 className="font-extrabold text-[32px] text-[#5ED2FF] w-[80%] mx-auto">
+          ECOSYSTEM PARTNERS
+        </h1>
+        <div className="xl:w-[80%] w-[90%] mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4 gap-y-8 justify-items-center items-center my-8">
+          <div
+            className="profile-card h-[150px] w-[150px] md:h-[200px] md:w-[200px] lg:col-start-2"
+            data-aos="fade-up"
+          >
+            <Link to="https://sineiitb.org/" target="_blank" rel="noreferrer">
+              <div className="img-container">
+                <img
+                  src={sine}
+                  alt="Sine IITB logo"
+                  className=""
+                  draggable="false"
+                />
+              </div>
+            </Link>
+          </div>
+
+          <div
+            className="profile-card h-[150px] w-[150px] md:h-[200px] md:w-[200px] lg:col-start-3"
+            data-aos="fade-up"
+          >
+            <Link to="https://ivycamp.in/" target="_blank" rel="noreferrer">
+              <div className="img-container">
+                <img
+                  src={ivy}
+                  alt="Ivy camp ventures logo"
+                  className=""
+                  draggable="false"
+                />
+              </div>
+            </Link>
+          </div>
+        </div>
+        <h1 className="font-extrabold text-[32px] text-[#5ED2FF] w-[80%] mx-auto pt-8">
           INVESTMENT PARTNERS
         </h1>
-        <div className="xl:w-[80%] w-[90%] mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 gap-y-8 justify-items-center items-center mt-8">
+        <div className="xl:w-[80%] w-[90%] mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4 gap-y-8 justify-items-center items-center mt-8">
           <div
             className="profile-card h-[150px] w-[150px] md:h-[200px] md:w-[200px]"
             data-aos="fade-up"
@@ -87,21 +124,6 @@ function Partners() {
                 <img
                   src={venture_wolf}
                   alt="venture_wolf logo"
-                  className=""
-                  draggable="false"
-                />
-              </div>
-            </Link>
-          </div>
-          <div
-            className="profile-card h-[150px] w-[150px] md:h-[200px] md:w-[200px]"
-            data-aos="fade-up"
-          >
-            <Link to="https://ivycamp.in/" target="_blank" rel="noreferrer">
-              <div className="img-container">
-                <img
-                  src={ivy}
-                  alt="Ivy camp ventures logo"
                   className=""
                   draggable="false"
                 />
@@ -291,7 +313,7 @@ function Partners() {
             className="profile-card h-[150px] w-[150px] md:h-[200px] md:w-[200px]"
             data-aos="fade-up"
           >
-            <Link to="#" rel="noreferrer">
+            <Link to="https://bizzbucket.co/" rel="noreferrer">
               <div className="img-container">
                 <img
                   src={bizzbucket}
@@ -306,7 +328,7 @@ function Partners() {
             className="profile-card h-[150px] w-[150px] md:h-[200px] md:w-[200px]"
             data-aos="fade-up"
           >
-            <Link to="#" rel="noreferrer">
+            <Link to="https://youthincmag.com/" rel="noreferrer">
               <div className="img-container">
                 <img
                   src={youth}
@@ -321,7 +343,7 @@ function Partners() {
             className="profile-card h-[150px] w-[150px] md:h-[200px] md:w-[200px]"
             data-aos="fade-up"
           >
-            <Link to="#" rel="noreferrer">
+            <Link to="https://unstop.com/" rel="noreferrer">
               <div className="img-container">
                 <img
                   src={unstop}
@@ -336,7 +358,7 @@ function Partners() {
             className="profile-card h-[150px] w-[150px] md:h-[200px] md:w-[200px]"
             data-aos="fade-up"
           >
-            <Link to="#" rel="noreferrer">
+            <Link to="https://zexprwire.com/" rel="noreferrer">
               <div className="img-container">
                 <img
                   src={zexpr}
@@ -351,7 +373,7 @@ function Partners() {
             className="profile-card h-[150px] w-[150px] md:h-[200px] md:w-[200px]"
             data-aos="fade-up"
           >
-            <Link to="#" rel="noreferrer">
+            <Link to="https://indiaeducationdiary.in/" rel="noreferrer">
               <div className="img-container">
                 <img
                   src={indiaeducation}
@@ -366,7 +388,7 @@ function Partners() {
             className="profile-card h-[150px] w-[150px] md:h-[200px] md:w-[200px]"
             data-aos="fade-up"
           >
-            <Link to="#" rel="noreferrer">
+            <Link to="https://startupnews.fyi/" rel="noreferrer">
               <div className="img-container">
                 <img
                   src={startupnews}
@@ -381,7 +403,7 @@ function Partners() {
             className="profile-card h-[150px] w-[150px] md:h-[200px] md:w-[200px]"
             data-aos="fade-up"
           >
-            <Link to="#" rel="noreferrer">
+            <Link to="https://www.lawctopus.com/" rel="noreferrer">
               <div className="img-container">
                 <img
                   src={lawctopus}
@@ -396,7 +418,7 @@ function Partners() {
             className="profile-card h-[150px] w-[150px] md:h-[200px] md:w-[200px]"
             data-aos="fade-up"
           >
-            <Link to="#" rel="noreferrer">
+            <Link to="https://www.knowafest.com/" rel="noreferrer">
               <div className="img-container">
                 <img
                   src={know}
@@ -411,7 +433,7 @@ function Partners() {
             className="profile-card h-[150px] w-[150px] md:h-[200px] md:w-[200px]"
             data-aos="fade-up"
           >
-            <Link to="#" rel="noreferrer">
+            <Link to="https://www.amarujala.com/" rel="noreferrer">
               <div className="img-container">
                 <img
                   src={amarujala}

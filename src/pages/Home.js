@@ -2,7 +2,6 @@
 import React, { useState,useEffect } from "react";
 import ActionPlanInfo from "./HomeSections/ActionPlanInfo.js";
 import Benefits from "./HomeSections/Benefits.js";
-import Testimonials from "./HomeSections/Testimonials.js";
 import ContactUs from "./HomeSections/ContactUs.js";
 import Footer from "../components/Footer.js";
 import Hero from "./HomeSections/Hero.js";
@@ -31,7 +30,6 @@ function Home() {
       <Hero />
       <ActionPlanInfo />
       <Benefits />
-      {/* <Testimonials /> */}
       <ContactUs />
       <Footer />
     </div>

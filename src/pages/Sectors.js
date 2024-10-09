@@ -1,11 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { ChevronDown } from "lucide-react";
 import SectionHeading from "../components/SectionHeading.js";
-import w1 from "../assets/w1.svg";
-import w2 from "../assets/w2.svg";
-import w3 from "../assets/w3.svg";
-import w4 from "../assets/w4.svg";
 import education from "../assets/education.png";
 import rural from "../assets/rural.png";
 import women from "../assets/women.png";
@@ -139,7 +134,9 @@ export default function Sectors() {
 
             {/* Scroll Down Chevron */}
             <div className="hidden md:block absolute bottom-28 left-1/2 transform -translate-x-1/2 text-center text-red-500 z-[1000]">
-              <p className="mb-2 text-sm left-1/2 md:text-xl md:font-medium absolute transform -translate-x-1/2 text-nowrap">Scroll Down</p>
+              <p className="mb-2 text-sm left-1/2 md:text-xl md:font-medium absolute transform -translate-x-1/2 text-nowrap">
+                Scroll Down
+              </p>
               <div class="scroll-down text-red-500">
                 <span></span>
                 <span></span>
@@ -203,8 +200,8 @@ export default function Sectors() {
               display: block;
               width: 20px;
               height: 20px;
-              border-bottom: 1px solid rgb(239,68,68);
-              border-right: 1px solid rgb(239,68,68);
+              border-bottom: 1px solid rgb(239, 68, 68);
+              border-right: 1px solid rgb(239, 68, 68);
               transform: rotate(45deg);
               margin: -10px;
               animation: animate 2s infinite;
@@ -213,8 +210,8 @@ export default function Sectors() {
               display: block;
               width: 20px;
               height: 20px;
-              border-bottom: 2px solid rgb(239,68,68);
-              border-right: 2px solid rgb(239,68,68);
+              border-bottom: 2px solid rgb(239, 68, 68);
+              border-right: 2px solid rgb(239, 68, 68);
               transform: rotate(45deg);
               margin: -5px;
               animation: animate 2s infinite;
